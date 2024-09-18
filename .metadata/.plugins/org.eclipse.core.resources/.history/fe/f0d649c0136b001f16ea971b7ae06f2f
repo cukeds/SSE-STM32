@@ -1,0 +1,55 @@
+#include "bsp_rf.h"
+#include "../Util/Util.h"
+#include <stdbool.h>
+static BSP_RF_Params_TypeDef *params;
+static BSP_RF_MODE_TypeDef mode = NONE;
+static bool clear_tx_irq = false;
+
+void BSP_RF_Init(BSP_RF_Params_TypeDef* _params)
+{
+    params = _params;
+    nrf24l01p_init();
+
+    mode = STANDBY;
+}
+
+void BSP_RF_SendMessage(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH])
+{
+	if(mode == STANDBY){
+		nrf24l01p_tx_init(params->channel, params->rate);
+	}else if(mode == RX){
+		nrf24l01p_standby();
+		nrf24l01p_tx_init(params->channel, params->rate);
+	}
+	mode = TX;
+
+	nrf24l01p_tx_transmit(payload);
+    clear_tx_irq = true;
+}
+
+void BSP_RF_Listening()
+{
+	if(mode == STANDBY){
+		nrf24l01p_rx_init(params->channel, params->rate);
+	}
+	else if(mode == TX){
+		nrf24l01p_standby();
+		nrf24l01p_rx_init(params->channel, params->rate);
+	}
+	mode = RX;
+
+}
+
+void BSP_RF_IrqHandler(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]){
+	if(mode == TX || clear_tx_irq){
+		nrf24l01p_clear_tx_ds();
+	    clear_tx_irq = false;
+		nrf24l01p_rx_init(params->channel, params->rate);
+		mode = RX;
+	}
+	else if(mode == RX){
+	    nrf24l01p_rx_receive(payload);
+		nrf24l01p_clear_rx_dr();
+	}
+}
+

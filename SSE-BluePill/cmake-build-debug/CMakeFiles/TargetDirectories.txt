@@ -1,0 +1,3 @@
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/cmake-build-debug/CMakeFiles/SSE-BluePill.elf.dir
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/cmake-build-debug/CMakeFiles/rebuild_cache.dir

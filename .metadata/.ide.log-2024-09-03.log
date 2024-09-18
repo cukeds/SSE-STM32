@@ -1,0 +1,5 @@
+2024-09-03 00:04:28,402 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-09-03 00:04:29,531 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1789mS.
+2024-09-03 00:04:29,532 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-03 00:04:29,535 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-03 21:56:42,656 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

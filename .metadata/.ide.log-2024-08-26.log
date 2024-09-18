@@ -1,0 +1,763 @@
+2024-08-27 00:00:34,973 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:35,559 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:36,372 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:37,245 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:37,774 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:38,298 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:39,658 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:40,086 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:40,522 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:41,011 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:41,811 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:42,315 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:00:45,698 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,698 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,701 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,701 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,703 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,703 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,706 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,706 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,709 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,709 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,712 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,712 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,715 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,715 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,718 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,718 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,721 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,721 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,724 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,724 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,728 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,728 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,732 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,732 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,735 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,735 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,738 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,738 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,741 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,741 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,744 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,744 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,746 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:00:45,746 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,362 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,362 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,365 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,365 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,367 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,367 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,370 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,370 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,372 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,372 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,375 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,375 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,377 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,377 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,380 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,380 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,382 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,382 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,385 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,385 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,387 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,387 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,390 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,390 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,393 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,393 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,395 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,395 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,397 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,397 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,400 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,400 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,403 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:23,403 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,533 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:04:24,846 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,846 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,849 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,849 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,851 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,851 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,853 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,854 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,856 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,856 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,859 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,859 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,861 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,861 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,863 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,863 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,865 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,865 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,867 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,867 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,870 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,870 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,874 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,874 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,876 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,876 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,879 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,879 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,881 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,881 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,883 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,883 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,886 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,886 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,888 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:04:24,888 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,479 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,479 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,509 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,509 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,509 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,509 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,518 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,518 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,527 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:07:44,527 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:12:30,151 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 307237160 Bytes (943718400)
+2024-08-27 00:12:30,209 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 319488832 Bytes (943718400)
+2024-08-27 00:12:30,630 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 358476608 Bytes (943718400)
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 00:12:30,713 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 00:12:30,714 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 00:12:30,714 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-27 00:12:30,714 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-27 00:12:30,812 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 00:12:30,892 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 00:12:30,938 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 00:12:31,019 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 00:12:31,116 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 00:12:31,295 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 00:12:31,312 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 00:12:31,369 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 00:12:31,391 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 00:12:31,490 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 00:12:31,500 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 00:12:31,553 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 00:12:31,571 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 00:12:31,640 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 00:12:31,661 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 00:12:31,661 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 00:12:31,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 00:12:31,754 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 00:12:31,770 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 00:12:31,862 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 00:12:32,095 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 111mS.
+2024-08-27 00:12:32,097 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 00:12:32,160 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 00:12:32,167 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-08-27 00:12:32,176 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-08-27 00:12:32,185 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-08-27 00:12:32,952 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 855mS.
+2024-08-27 00:12:32,953 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-27 00:12:32,955 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 00:25:04,628 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,474x353,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:05,478 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:05,767 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:06,151 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:11,679 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:12,689 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:21,275 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:21,314 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:22,114 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:22,153 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:23,325 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:23,364 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:24,232 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:24,269 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:25,199 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:25,237 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:26,236 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:26,275 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:27,576 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:30,368 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:32,079 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:32,117 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:32,934 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:25:38,639 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:26:24,911 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,474x353,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:26:25,925 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:26:26,427 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:26:30,256 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 665585048 Bytes (943718400)
+2024-08-27 00:26:30,307 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 678018560 Bytes (943718400)
+2024-08-27 00:26:30,734 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 736365976 Bytes (943718400)
+2024-08-27 00:26:30,809 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 00:26:30,809 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 00:26:30,809 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 00:26:30,809 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 00:26:30,809 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 00:26:30,810 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 00:26:30,810 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 00:26:30,859 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 00:26:30,922 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 00:26:30,935 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 00:26:31,002 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 00:26:31,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 00:26:31,218 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 00:26:31,227 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 00:26:31,285 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 00:26:31,301 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 00:26:31,399 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 00:26:31,402 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 00:26:31,445 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 00:26:31,459 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 00:26:31,535 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 00:26:31,559 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 00:26:31,559 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 00:26:31,571 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 00:26:31,642 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 00:26:31,653 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 00:26:31,741 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 00:26:31,972 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 105mS.
+2024-08-27 00:26:31,974 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 00:26:32,030 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 00:26:32,679 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 705mS.
+2024-08-27 00:26:32,679 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 00:26:32,681 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 00:45:29,860 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-27 00:45:29,860 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-27 00:45:29,893 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-27 00:45:29,893 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-27 00:45:29,903 [ERROR] ProjectManagerView:394 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$10.caretUpdate(ProjectChoiceTab.java:2622) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:412) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4491) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4513) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:842) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1313) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1212) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1193) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1789) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:226) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:780) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:739) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:698) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1729) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:972) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3597) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1940) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:550) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:245) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:391) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:900) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:781) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:265) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:352) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:330) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:246) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1198) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2024-08-27 00:45:29,903 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-08-27 00:45:29,903 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-08-27 00:45:29,903 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-08-27 00:45:29,904 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-27 00:45:29,906 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 412185856 Bytes (943718400)
+2024-08-27 00:45:29,906 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-27 00:45:29,906 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-27 00:45:29,906 [INFO] OpenFileManager:332 - Change cursor
+2024-08-27 00:45:29,920 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-08-27 00:45:29,928 [INFO] Mcu:2032 - Initializing MCU STM32F103C(8-B)Tx STM32F103C8Tx STM32F103C8T6
+2024-08-27 00:45:30,335 [INFO] Context:742 - Trying to add GPIOservice into a context  which must be forbidden
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,480 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-27 00:45:30,481 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2024-08-27 00:45:30,523 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-08-27 00:45:30,523 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-08-27 00:45:30,523 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-08-27 00:45:30,523 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-08-27 00:45:30,523 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-08-27 00:45:30,527 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-08-27 00:45:30,583 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-08-27 00:45:30,586 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (36000000)
+2024-08-27 00:45:30,586 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2024-08-27 00:45:30,586 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2024-08-27 00:45:30,586 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2024-08-27 00:45:30,713 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 501746256 Bytes (943718400)
+2024-08-27 00:45:30,738 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-08-27 00:45:30,738 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-08-27 00:45:30,738 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-08-27 00:45:30,739 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-08-27 00:45:30,798 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-27 00:45:30,798 [INFO] PinOutPanel:1561 - setPackage(STM32F103C8Tx,LQFP48)
+2024-08-27 00:45:30,937 [INFO] UtilMem:75 - Before build in PCC Used Memory: 350933552 Bytes (943718400)
+2024-08-27 00:45:31,095 [INFO] UtilMem:75 - After build in PCC Used Memory: 392350256 Bytes (943718400)
+2024-08-27 00:45:31,104 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,105 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,106 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,107 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,107 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,107 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,107 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,107 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-27 00:45:31,130 [INFO] CADModel:165 - CPN selected for project levelSTM32F103C8T6
+2024-08-27 00:45:31,130 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-27 00:45:31,181 [INFO] OpenFileManager:363 - Restore cursor
+2024-08-27 00:45:33,621 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:49:52,629 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:49:55,787 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:49:55,827 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:50:00,182 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,474x215,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:50:00,979 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:50:01,249 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:50:01,501 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:50:03,572 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 443974016 Bytes (943718400)
+2024-08-27 00:50:03,630 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 455616704 Bytes (943718400)
+2024-08-27 00:50:04,142 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 494940352 Bytes (943718400)
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 00:50:04,216 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 00:50:04,216 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 00:50:04,280 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 00:50:04,356 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 00:50:04,414 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 00:50:04,515 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 00:50:04,563 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 00:50:04,703 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 00:50:04,716 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 00:50:04,769 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 00:50:04,785 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 00:50:04,884 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 00:50:04,889 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 00:50:04,932 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 00:50:04,947 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 00:50:05,020 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 00:50:05,038 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 00:50:05,038 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 00:50:05,051 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 00:50:05,125 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 00:50:05,136 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 00:50:05,226 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 00:50:05,458 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 104mS.
+2024-08-27 00:50:05,461 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 00:50:05,517 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 00:50:05,519 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-08-27 00:50:05,521 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-08-27 00:50:05,524 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-08-27 00:50:06,131 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 670mS.
+2024-08-27 00:50:06,131 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 00:50:06,133 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 00:53:49,932 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:53:50,000 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:54:02,694 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:54:02,768 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:54:04,033 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:54:04,097 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 00:54:05,003 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 842808952 Bytes (943718400)
+2024-08-27 00:54:05,061 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 306367032 Bytes (943718400)
+2024-08-27 00:54:11,909 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 410837864 Bytes (943718400)
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 00:54:11,988 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 00:54:11,990 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 00:54:12,044 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 00:54:12,121 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 00:54:12,135 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 00:54:12,207 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 00:54:12,258 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 00:54:12,322 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 00:54:12,326 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 00:54:12,371 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 00:54:12,386 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 00:54:12,452 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 00:54:12,455 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 00:54:12,498 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 00:54:12,512 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 00:54:12,584 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 00:54:12,599 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 00:54:12,600 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 00:54:12,611 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 00:54:12,668 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 00:54:12,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 00:54:12,801 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 00:54:13,041 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 103mS.
+2024-08-27 00:54:13,045 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 00:54:13,101 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 00:54:13,666 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 622mS.
+2024-08-27 00:54:13,667 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-27 00:54:13,670 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:08:28,578 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:28,643 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:29,923 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:29,987 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:31,343 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:31,409 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:35,049 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:35,114 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:36,829 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:36,892 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:39,956 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:40,020 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:08:42,193 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 805207136 Bytes (943718400)
+2024-08-27 01:08:42,250 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 817502152 Bytes (943718400)
+2024-08-27 01:08:42,616 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 336837416 Bytes (943718400)
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:08:42,691 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:08:42,692 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:08:42,745 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:08:42,825 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:08:42,839 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:08:42,915 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:08:42,967 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:08:43,095 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:08:43,100 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:08:43,146 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:08:43,161 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:08:43,237 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:08:43,241 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:08:43,285 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:08:43,299 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:08:43,372 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:08:43,387 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:08:43,388 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:08:43,400 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:08:43,467 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:08:43,477 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:08:43,567 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:08:43,793 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 100mS.
+2024-08-27 01:08:43,796 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:08:43,856 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:08:44,404 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 608mS.
+2024-08-27 01:08:44,404 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:08:44,406 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:10:13,896 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:10:13,959 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:10:20,218 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 700012952 Bytes (943718400)
+2024-08-27 01:10:20,271 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 714886832 Bytes (943718400)
+2024-08-27 01:10:20,657 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 744773296 Bytes (943718400)
+2024-08-27 01:10:20,734 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:10:20,735 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:10:20,735 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:10:20,735 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:10:20,735 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:10:20,735 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:10:20,735 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:10:20,788 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:10:20,865 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:10:20,878 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:10:20,952 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:10:21,003 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:10:21,067 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:10:21,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:10:21,116 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:10:21,131 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:10:21,217 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:10:21,220 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:10:21,263 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:10:21,281 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:10:21,352 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:10:21,367 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:10:21,368 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:10:21,379 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:10:21,435 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:10:21,445 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:10:21,533 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:10:21,751 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 95mS.
+2024-08-27 01:10:21,753 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:10:21,808 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:10:22,309 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 555mS.
+2024-08-27 01:10:22,309 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:10:22,311 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:11:34,064 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:11:34,104 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:11:34,167 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:11:39,610 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 483216000 Bytes (943718400)
+2024-08-27 01:11:39,659 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 495196320 Bytes (943718400)
+2024-08-27 01:11:40,066 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 525605024 Bytes (943718400)
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:11:40,140 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:11:40,141 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:11:40,197 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:11:40,275 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:11:40,289 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:11:40,356 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:11:40,405 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:11:40,470 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:11:40,474 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:11:40,520 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:11:40,534 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:11:40,605 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:11:40,608 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:11:40,653 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:11:40,666 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:11:40,739 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:11:40,754 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:11:40,755 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:11:40,766 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:11:40,821 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:11:40,832 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:11:40,925 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:11:41,153 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 103mS.
+2024-08-27 01:11:41,155 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:11:41,210 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:11:41,718 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 563mS.
+2024-08-27 01:11:41,718 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:11:41,720 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:21:31,070 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:21:39,118 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,27,474x564,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:21:40,408 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:21:41,364 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:21:41,864 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:23:08,153 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 504229720 Bytes (943718400)
+2024-08-27 01:23:08,202 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 515229584 Bytes (943718400)
+2024-08-27 01:23:08,588 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 543539088 Bytes (943718400)
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:23:08,659 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:23:08,660 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:23:08,713 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:23:08,804 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:23:08,818 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:23:08,891 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:23:08,942 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:23:09,028 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:23:09,038 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:23:09,098 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:23:09,115 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:23:09,264 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:23:09,271 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:23:09,329 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:23:09,348 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:23:09,427 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:23:09,446 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:23:09,447 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:23:09,461 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:23:09,522 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:23:09,532 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:23:09,623 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:23:09,852 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 101mS.
+2024-08-27 01:23:09,855 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:23:09,911 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:23:10,450 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 596mS.
+2024-08-27 01:23:10,450 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:23:10,452 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:41:03,187 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:41:04,830 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:06,766 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:07,614 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:08,191 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:08,655 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:09,087 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:09,477 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-08-27 01:41:45,002 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:42:00,336 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 684669824 Bytes (943718400)
+2024-08-27 01:42:00,396 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 695806640 Bytes (943718400)
+2024-08-27 01:42:00,797 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 734479232 Bytes (943718400)
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:42:00,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:42:00,867 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:42:00,914 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:42:00,979 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:42:00,993 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:42:01,069 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:42:01,125 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:42:01,262 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:42:01,266 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:42:01,317 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:42:01,331 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:42:01,406 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:42:01,410 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:42:01,456 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:42:01,469 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:42:01,556 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:42:01,573 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:42:01,574 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:42:01,587 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:42:01,658 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:42:01,669 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:42:01,759 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:42:02,017 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 118mS.
+2024-08-27 01:42:02,019 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:42:02,076 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:42:02,600 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 581mS.
+2024-08-27 01:42:02,600 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:42:02,603 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-27 01:45:35,448 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, TIM2]
+2024-08-27 01:45:42,322 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 626808592 Bytes (943718400)
+2024-08-27 01:45:42,373 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 638865168 Bytes (943718400)
+2024-08-27 01:45:42,767 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 669273872 Bytes (943718400)
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-27 01:45:42,838 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-27 01:45:42,839 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-27 01:45:42,888 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2024-08-27 01:45:42,958 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2024-08-27 01:45:42,972 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp_save
+2024-08-27 01:45:43,047 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\gpio.tmp
+2024-08-27 01:45:43,098 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2024-08-27 01:45:43,171 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2024-08-27 01:45:43,175 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2024-08-27 01:45:43,233 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2024-08-27 01:45:43,247 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2024-08-27 01:45:43,312 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2024-08-27 01:45:43,315 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2024-08-27 01:45:43,361 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2024-08-27 01:45:43,380 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-08-27 01:45:43,468 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2024-08-27 01:45:43,488 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-08-27 01:45:43,489 [WARN] CodeGenerator:4002 - IP not found : null
+2024-08-27 01:45:43,502 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2024-08-27 01:45:43,558 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2024-08-27 01:45:43,569 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2024-08-27 01:45:43,657 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2024-08-27 01:45:43,890 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 106mS.
+2024-08-27 01:45:43,892 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-27 01:45:43,949 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-08-27 01:45:44,453 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 561mS.
+2024-08-27 01:45:44,454 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-27 01:45:44,457 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.

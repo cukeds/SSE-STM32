@@ -1,0 +1,20 @@
+C:\Users\Juan\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill -B C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- The C compiler identification is GNU 12.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Minimal optimization, debug info included
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/cmake-build-debug

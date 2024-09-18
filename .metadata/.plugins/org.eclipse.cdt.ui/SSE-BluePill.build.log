@@ -1,0 +1,10 @@
+00:12:51 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-size  SSE-BluePill.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16936	     20	   1884	  18840	   4998	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+
+00:12:51 Build Finished. 0 errors, 0 warnings. (took 303ms)
+

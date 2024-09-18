@@ -1,0 +1,698 @@
+2024-08-20 00:03:24,206 [ERROR] :77 - Fail to recover any existing build configuration matching on going update process
+2024-08-20 00:03:24,215 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 390mS.
+2024-08-20 00:03:24,216 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-20 00:03:24,218 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-20 00:05:52,082 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,082 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,083 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,083 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,423 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,423 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,423 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:52,423 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:53,367 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 631553480 Bytes (966787072)
+2024-08-20 00:05:53,417 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 648252000 Bytes (966787072)
+2024-08-20 00:05:53,801 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 684425824 Bytes (966787072)
+2024-08-20 00:05:53,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-20 00:05:53,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-20 00:05:53,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-08-20 00:05:53,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-20 00:05:53,866 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-20 00:05:53,867 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-20 00:05:53,868 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:53,868 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:05:53,914 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\license.tmp_save
+2024-08-20 00:05:53,973 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\license.tmp
+2024-08-20 00:05:53,981 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\gpio.tmp_save
+2024-08-20 00:05:54,042 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\gpio.tmp
+2024-08-20 00:05:54,069 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\stm32f4xx_it.c_save
+2024-08-20 00:05:54,125 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\stm32f4xx_it.c
+2024-08-20 00:05:54,135 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\stm32f4xx_it.h_save
+2024-08-20 00:05:54,180 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\stm32f4xx_it.h
+2024-08-20 00:05:54,194 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\stm32f4xx_hal_msp.c_save
+2024-08-20 00:05:54,258 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\stm32f4xx_hal_msp.c
+2024-08-20 00:05:54,261 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\system.tmp_save
+2024-08-20 00:05:54,305 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\MXTmpFiles\system.tmp
+2024-08-20 00:05:54,317 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-08-20 00:05:54,397 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\stm32f4xx_hal_conf.h
+2024-08-20 00:05:54,425 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\main.h_save
+2024-08-20 00:05:54,480 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Inc\main.h
+2024-08-20 00:05:54,491 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\main.c_save
+2024-08-20 00:05:54,565 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\Core\Src\main.c
+2024-08-20 00:05:54,796 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 121mS.
+2024-08-20 00:05:54,799 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-20 00:05:54,851 [INFO] ConfigFileManager:1531 - The Die is : DIE431
+2024-08-20 00:05:55,044 [ERROR] :77 - Fail to recover any existing build configuration matching on going update process
+2024-08-20 00:05:55,044 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 245mS.
+2024-08-20 00:05:55,045 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-20 00:05:55,047 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-20 00:07:13,326 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-20 00:07:13,326 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-20 00:07:13,332 [ERROR] IocParser:57 - IOException caught: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\sse_disc.ioc (The system cannot find the path specified)
+2024-08-20 00:07:13,332 [ERROR] PeripheralListParser:95 - Something went wrong with ioc file reading: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\sse_disc.ioc (The system cannot find the path specified)
+2024-08-20 00:07:13,332 [ERROR] RegexParser:59 - Issue caught when parsing regex: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\sse_disc\sse_disc.ioc (The system cannot find the path specified)
+2024-08-20 00:07:13,350 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-20 00:07:13,350 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-20 00:07:13,355 [ERROR] ProjectManagerView:394 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$10.caretUpdate(ProjectChoiceTab.java:2622) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:412) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4491) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4513) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:842) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1313) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1212) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1193) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1789) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:226) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:780) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:739) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:698) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1729) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:972) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3597) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1940) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:550) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:245) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:391) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:900) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:781) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:265) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:352) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:330) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:246) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1198) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2024-08-20 00:07:13,355 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-08-20 00:07:13,355 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-08-20 00:07:13,355 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-08-20 00:07:13,356 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-20 00:07:13,359 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2024-08-20 00:07:13,361 [WARN] MainPanel:284 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2024-08-20 00:07:13,365 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 432020128 Bytes (966787072)
+2024-08-20 00:07:13,365 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-20 00:07:13,365 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-20 00:07:13,365 [INFO] OpenFileManager:332 - Change cursor
+2024-08-20 00:07:13,371 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-08-20 00:07:13,374 [INFO] Mcu:2032 - Initializing MCU STM32F411V(C-E)Tx STM32F411VETx STM32F411VET6
+2024-08-20 00:07:13,965 [INFO] Context:742 - Trying to add GPIOservice into a context  which must be forbidden
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,093 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:07:14,094 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2024-08-20 00:07:14,149 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-08-20 00:07:14,149 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-08-20 00:07:14,149 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-08-20 00:07:14,149 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-08-20 00:07:14,149 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,150 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,151 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:07:14,153 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-08-20 00:07:14,205 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-08-20 00:07:14,208 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,208 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,208 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (12500000)
+2024-08-20 00:07:14,405 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 405217672 Bytes (966787072)
+2024-08-20 00:07:14,441 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-08-20 00:07:14,441 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-08-20 00:07:14,441 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-08-20 00:07:14,442 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-08-20 00:07:14,443 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-08-20 00:07:14,512 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-20 00:07:14,513 [INFO] PinOutPanel:1561 - setPackage(STM32F411VETx,LQFP100)
+2024-08-20 00:07:14,597 [INFO] UtilMem:75 - Before build in PCC Used Memory: 535549104 Bytes (966787072)
+2024-08-20 00:07:14,691 [INFO] UtilMem:75 - After build in PCC Used Memory: 577492144 Bytes (966787072)
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,702 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,703 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,705 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:07:14,708 [INFO] ApiDbMcu:508 - Load IP Config File for PDM2PCM
+2024-08-20 00:07:14,709 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,709 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,733 [INFO] CADModel:165 - CPN selected for project levelSTM32F411VET6
+2024-08-20 00:07:14,733 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-20 00:07:14,781 [INFO] OpenFileManager:363 - Restore cursor
+2024-08-20 00:07:14,879 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,879 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,879 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:07:14,879 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:08:52,150 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:08:52,150 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:20:59,871 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:20:59,871 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:20:59,871 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:20:59,871 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:01,447 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:01,447 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:01,448 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:01,448 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:06,112 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:06,112 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:06,112 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:06,112 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:11,934 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:11,934 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:11,934 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:11,934 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:17,876 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 551576256 Bytes (1021313024)
+2024-08-20 00:21:17,923 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 568353472 Bytes (1021313024)
+2024-08-20 00:21:18,299 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 638608064 Bytes (1021313024)
+2024-08-20 00:21:18,387 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-20 00:21:18,387 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-20 00:21:18,387 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-08-20 00:21:18,387 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-20 00:21:18,387 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-20 00:21:18,388 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-20 00:21:18,389 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:18,389 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:21:18,440 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\license.tmp_save
+2024-08-20 00:21:18,544 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\license.tmp
+2024-08-20 00:21:18,567 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\gpio.tmp_save
+2024-08-20 00:21:18,630 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\gpio.tmp
+2024-08-20 00:21:18,654 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_it.c_save
+2024-08-20 00:21:18,777 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_it.c
+2024-08-20 00:21:18,787 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_it.h_save
+2024-08-20 00:21:18,837 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_it.h
+2024-08-20 00:21:18,851 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_hal_msp.c_save
+2024-08-20 00:21:18,932 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_hal_msp.c
+2024-08-20 00:21:18,935 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\system.tmp_save
+2024-08-20 00:21:18,977 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\system.tmp
+2024-08-20 00:21:18,991 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-08-20 00:21:19,062 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_hal_conf.h
+2024-08-20 00:21:19,091 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\main.h_save
+2024-08-20 00:21:19,158 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\main.h
+2024-08-20 00:21:19,169 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\main.c_save
+2024-08-20 00:21:19,259 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\main.c
+2024-08-20 00:21:19,511 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 135mS.
+2024-08-20 00:21:19,514 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-20 00:21:19,570 [INFO] ConfigFileManager:1531 - The Die is : DIE431
+2024-08-20 00:21:19,572 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-08-20 00:21:19,575 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-08-20 00:21:19,576 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-08-20 00:21:19,579 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-08-20 00:21:19,582 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-08-20 00:21:19,584 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
+2024-08-20 00:21:20,099 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 585mS.
+2024-08-20 00:21:20,100 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-08-20 00:21:20,102 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-20 00:23:30,671 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:30,671 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:30,671 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:30,671 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:34,578 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:34,578 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:34,578 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:34,578 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:48,295 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:48,295 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:48,295 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:48,295 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:49,656 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:49,656 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:49,656 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:49,656 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:50,712 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:50,712 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:50,712 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:50,712 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:52,522 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:52,522 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:52,523 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:52,523 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:54,209 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:54,209 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:54,209 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:54,210 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:55,461 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:55,461 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:55,461 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:55,461 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:56,831 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:56,831 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:56,831 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:56,831 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:58,233 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:58,233 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:58,233 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:58,233 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:59,750 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:59,750 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:59,751 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:23:59,751 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:01,214 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:01,214 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:01,214 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:01,214 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:03,275 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:03,275 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:03,275 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:03,275 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:06,061 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:06,061 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:06,061 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:06,061 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:07,260 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:07,260 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:07,260 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:07,260 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:09,576 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:09,577 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:09,577 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:09,577 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:11,279 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:11,279 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:11,279 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:11,279 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:12,803 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:12,803 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:12,804 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:12,804 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:17,652 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:17,652 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:17,653 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:17,653 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:24,674 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 705738608 Bytes (1021313024)
+2024-08-20 00:24:24,718 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 722515824 Bytes (1021313024)
+2024-08-20 00:24:25,098 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 756070256 Bytes (1021313024)
+2024-08-20 00:24:25,163 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-20 00:24:25,163 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-20 00:24:25,163 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2024-08-20 00:24:25,163 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-20 00:24:25,163 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-20 00:24:25,164 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-20 00:24:25,164 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:25,164 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:24:25,215 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\license.tmp_save
+2024-08-20 00:24:25,278 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\license.tmp
+2024-08-20 00:24:25,287 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\gpio.tmp_save
+2024-08-20 00:24:25,349 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\gpio.tmp
+2024-08-20 00:24:25,385 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_it.c_save
+2024-08-20 00:24:25,442 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_it.c
+2024-08-20 00:24:25,447 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_it.h_save
+2024-08-20 00:24:25,513 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_it.h
+2024-08-20 00:24:25,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_hal_msp.c_save
+2024-08-20 00:24:25,599 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\stm32f4xx_hal_msp.c
+2024-08-20 00:24:25,603 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\system.tmp_save
+2024-08-20 00:24:25,646 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\MXTmpFiles\system.tmp
+2024-08-20 00:24:25,659 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-08-20 00:24:25,733 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\stm32f4xx_hal_conf.h
+2024-08-20 00:24:25,769 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Inc\main.h_save
+2024-08-20 00:24:25,825 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Inc\main.h
+2024-08-20 00:24:25,836 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\Downloads\oled\oled\Core\Src\main.c_save
+2024-08-20 00:24:25,923 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\Downloads\oled\oled\Core\Src\main.c
+2024-08-20 00:24:26,174 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 134mS.
+2024-08-20 00:24:26,176 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-20 00:24:26,233 [INFO] ConfigFileManager:1531 - The Die is : DIE431
+2024-08-20 00:24:26,718 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 542mS.
+2024-08-20 00:24:26,719 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-20 00:24:26,721 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-08-20 00:31:00,536 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-20 00:31:00,536 [INFO] MainUpdater:2873 - connection check result : 10
+2024-08-20 00:31:00,561 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-20 00:31:00,561 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-20 00:31:00,565 [ERROR] ProjectManagerView:394 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$10.caretUpdate(ProjectChoiceTab.java:2622) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:412) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4491) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4513) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:842) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1313) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1212) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1193) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1789) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:226) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:780) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:739) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:698) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1729) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:972) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3597) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1940) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:550) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:245) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:391) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:900) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:781) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:265) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:352) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:330) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:246) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1198) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2024-08-20 00:31:00,566 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-08-20 00:31:00,566 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-08-20 00:31:00,566 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-08-20 00:31:00,567 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-20 00:31:00,571 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2024-08-20 00:31:00,572 [WARN] MainPanel:284 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2024-08-20 00:31:00,574 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 463089104 Bytes (1021313024)
+2024-08-20 00:31:00,574 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-08-20 00:31:00,574 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-08-20 00:31:00,574 [INFO] OpenFileManager:332 - Change cursor
+2024-08-20 00:31:00,580 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-08-20 00:31:00,582 [INFO] Mcu:2032 - Initializing MCU STM32F411V(C-E)Tx STM32F411VETx STM32F411VET6
+2024-08-20 00:31:01,111 [INFO] Context:742 - Trying to add GPIOservice into a context  which must be forbidden
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,217 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-08-20 00:31:01,218 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2024-08-20 00:31:01,269 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-08-20 00:31:01,269 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-08-20 00:31:01,269 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-08-20 00:31:01,269 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-08-20 00:31:01,269 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Audio HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:CDC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:DFU HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:Custom HID HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,270 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_DEVICE:1.0.0:STMicroelectronics:USB::USB Device:MSC HS::1.0:USB_DEVICE_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:Audio HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:CDC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MSC HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:HID HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:182 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,271 [WARN] ModelIntegratedComponent:188 - Modes not found for component STMicroelectronics:USB_HOST:1.0.0:STMicroelectronics:USB::USB Host:MTP HS::1.0:USB_HOST_1_0_RESTRICTED_HS
+2024-08-20 00:31:01,272 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-08-20 00:31:01,323 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-08-20 00:31:01,326 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,326 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,326 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (12500000)
+2024-08-20 00:31:01,509 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 457487256 Bytes (1021313024)
+2024-08-20 00:31:01,535 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-08-20 00:31:01,535 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 6.0.0
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-08-20 00:31:01,535 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 10.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-08-20 00:31:01,536 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-08-20 00:31:01,612 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-08-20 00:31:01,612 [INFO] PinOutPanel:1561 - setPackage(STM32F411VETx,LQFP100)
+2024-08-20 00:31:01,694 [INFO] UtilMem:75 - Before build in PCC Used Memory: 383080552 Bytes (1021313024)
+2024-08-20 00:31:01,793 [INFO] UtilMem:75 - After build in PCC Used Memory: 425023592 Bytes (1021313024)
+2024-08-20 00:31:01,804 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,804 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,804 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,804 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,804 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,805 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,806 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,807 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,808 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,808 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,808 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,808 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,809 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,809 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,809 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,809 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,831 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-08-20 00:31:01,833 [INFO] ApiDbMcu:508 - Load IP Config File for PDM2PCM
+2024-08-20 00:31:01,833 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,833 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,859 [INFO] CADModel:165 - CPN selected for project levelSTM32F411VET6
+2024-08-20 00:31:01,859 [INFO] CADModel:114 - Register for checkConnection events
+2024-08-20 00:31:01,907 [INFO] OpenFileManager:363 - Restore cursor
+2024-08-20 00:31:01,926 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,926 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,927 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-08-20 00:31:01,927 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-08-20 00:36:07,796 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-08-20 00:36:07,802 [INFO] UserAuth:417 - Internet connection configuration mode: 1
+2024-08-20 00:36:07,803 [INFO] UserAuth:179 - activating auth plugin
+2024-08-20 00:36:07,807 [INFO] UserAuth:417 - Internet connection configuration mode: 1
+2024-08-20 00:36:09,509 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-08-20 00:36:09,509 [INFO] UserAuth:179 - activating auth plugin
+2024-08-20 00:36:09,510 [INFO] UserAuth:417 - Internet connection configuration mode: 1
+2024-08-20 00:37:17,662 [INFO] WebApp:643 - userauth.ini created with success
+2024-08-20 19:57:11,884 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
