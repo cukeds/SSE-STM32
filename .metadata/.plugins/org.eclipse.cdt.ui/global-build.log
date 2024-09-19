@@ -569,3 +569,235 @@ arm-none-eabi-size  SSE-Disc.elf
   15632	     12	   1784	  17428	   4414	SSE-Disc.elf
 Finished building: default.size.stdout
  
+20:45:34 **** Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-size  SSE-BluePill.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16936	     20	   1884	  18840	   4998	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+20:54:05 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17124	     20	   1884	  19028	   4a54	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:08:53 **** Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  15636	     12	   1784	  17432	   4418	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+21:11:32 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:23:33: warning: argument 1 of type 'uint8_t[]' {aka 'unsigned char[]'} with mismatched bound [-Warray-parameter=]
+   23 | void BSP_RF_SendMessage(uint8_t payload[])
+      |                         ~~~~~~~~^~~~~~~~~
+In file included from C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:1:
+../../Common/Inc/bsp_rf.h:26:33: note: previously declared as 'uint8_t[8]' {aka 'unsigned char[8]'}
+   26 | void BSP_RF_SendMessage(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]);
+      |                         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  15636	     12	   1784	  17432	   4418	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+21:12:22 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  15636	     12	   1784	  17432	   4418	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+21:17:25 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17128	     20	   1884	  19032	   4a58	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:17:38 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-size  SSE-BluePill.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17128	     20	   1884	  19032	   4a58	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+21:18:03 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  15824	     12	   1784	  17620	   44d4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+21:20:21 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  16940	     20	   1884	  18844	   499c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:20:39 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15824	     12	   1784	  17620	   44d4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+21:22:38 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:22:57 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:23:33 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15824	     12	   1784	  17620	   44d4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+21:24:54 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15824	     12	   1784	  17620	   44d4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+21:25:42 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:28:17 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:29:03 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15824	     12	   1784	  17620	   44d4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+21:30:01 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 
+21:30:59 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-BluePill.elf
+ 
+arm-none-eabi-size  SSE-BluePill.elf 
+arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-BluePill.list
+ 

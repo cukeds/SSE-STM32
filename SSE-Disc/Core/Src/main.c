@@ -50,7 +50,7 @@ uint8_t motion[5];
 int16_t button = 0;
 double voltage;
 uint32_t adc_value;
-uint8_t valid;
+volatile uint8_t valid = 0;
 volatile unsigned long handledInterrupts = 0;
 volatile unsigned long toHandleInterrupts = 0;
 uint8_t status = 0;
@@ -181,7 +181,7 @@ void SystemClock_Config(void)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
 	if(hadc == &hadc1){
 		 adc_value = HAL_ADC_GetValue(&hadc1);
-		 voltage = adc_value * 8 / 10000;
+		 voltage = (double) (adc_value * 8 / 10000);
 		 valid = 1;
 		if(voltage > 0){
 			tx_data[7] = 1;
@@ -189,7 +189,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
 			tx_data[7] = 2;
 		}
 		HAL_GPIO_TogglePin(GPIOD, LED_TX_Pin);
+		BSP_RF_Sending();
 		BSP_RF_SendMessage(tx_data);
+		BSP_RF_Listening();
 		HAL_GPIO_TogglePin(GPIOD, LED_TX_Pin);
 	}
 }
