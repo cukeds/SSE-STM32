@@ -1,0 +1,64 @@
+#include "bsp_rf.h"
+static BSP_RF_Params_TypeDef *params;
+static BSP_RF_MODE_TypeDef mode = NONE;
+static uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH];
+static uint8_t ack[NRF24L01P_PAYLOAD_LENGTH];
+static uint64_t pipeAddress = NRF24L01P_ADDRESS;
+
+void BSP_RF_Init(BSP_RF_Params_TypeDef* _params)
+{
+	NRF24_begin(NRF24L01P_SPI_CS_PIN_PORT, NRF24L01P_SPI_CS_PIN_NUMBER, NRF24L01P_CE_PIN_PORT, NRF24L01P_CE_PIN_NUMBER, NRF24L01P_SPI);
+	NRF24_setAutoAck(true);
+	NRF24_setChannel(_params->channel);
+	NRF24_setPayloadSize(NRF24L01P_PAYLOAD_LENGTH);
+	NRF24_enableDynamicPayloads();
+	NRF24_enableAckPayload();
+	NRF24_setDataRate(_params->rate);
+}
+
+void BSP_RF_Sending(){
+	NRF24_stopListening();
+	NRF24_openWritingPipe(pipeAddress);
+	mode = TX;
+}
+
+void BSP_RF_SendMessage(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH])
+{
+	if(NRF24_write(payload, NRF24L01P_PAYLOAD_LENGTH))
+	{
+		NRF24_read(rx_data, NRF24L01P_PAYLOAD_LENGTH);
+	}
+}
+
+void BSP_RF_Listening()
+{
+	NRF24_openReadingPipe(1, pipeAddress);
+	NRF24_startListening();
+	mode = RX;
+}
+
+void _BSP_RF_ReceiveMessage(){
+	if(NRF24_available())
+	{
+		NRF24_read(rx_data, NRF24L01P_PAYLOAD_LENGTH);
+		NRF24_writeAckPayload(1, tx_data, NRF24L01P_PAYLOAD_LENGTH);
+	}
+}
+
+void BSP_RF_SetAck(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(payload, ack, NRF24L01P_PAYLOAD_LENGTH);
+}
+
+uint8_t BSP_RF_IrqHandler(){
+	uint8_t ret = 0;
+	if(mode == RX){
+		__BSP_RF_ReceiveMessage();
+		ret = 1;
+	}
+
+	return ret;
+}
+
+void BSP_RF_ReadData(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(payload, rx_data, NRF24L01P_PAYLOAD_LENGTH);
+}

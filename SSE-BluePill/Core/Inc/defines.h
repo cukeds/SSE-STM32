@@ -12,6 +12,8 @@
 #include "stm32f1xx_hal.h"
 
 //Put your global defines for all libraries here used in your project
+#define STM32F1
+
 // ENCODER
 #define ENCODER_DIRECTION_LEFT -1
 #define ENCODER_DIRECTION_RIGHT 1
@@ -46,8 +48,11 @@
 #define NRF24L01P_IRQ_PIN_NUMBER          GPIO_PIN_10
 
 #define NRF24L01P_PAYLOAD_LENGTH          8     // 1 - 32bytes
+#define NRF24L01P_ADDRESS				  { 'E', 'S', 'B' }
 
-#define NRF24L01P_CHANNEL 2500
+#define nRF24_WAIT_TIMEOUT         		  (uint32_t)0x000FFFFF
+
+#define NRF24L01P_CHANNEL 90
 #define NRF24L01P_RATE _1Mbps
 #define NRF24L01P_RETRANSMIT_COUNT 3
 
@@ -57,18 +62,27 @@ typedef uint8_t length;
 typedef uint16_t delay;
 typedef uint16_t channel;
 
-typedef enum
-{
+//**** TypeDefs ****//
+//1. Power Amplifier function, NRF24_setPALevel()
+typedef enum {
+	RF24_PA_m18dB = 0,
+	RF24_PA_m12dB,
+	RF24_PA_m6dB,
+	RF24_PA_0dB,
+	RF24_PA_ERROR
+}rf24_pa_dbm_e ;
+//2. NRF24_setDataRate() input
+typedef enum {
     _250kbps = 2,
     _1Mbps   = 0,
     _2Mbps   = 1
 } air_data_rate;
 
-typedef enum
-{
-    _0dBm  = 3,
-    _6dBm  = 2,
-    _12dBm = 1,
-    _18dBm = 0
-} output_power;
+//3. NRF24_setCRCLength() input
+typedef enum {
+	RF24_CRC_DISABLED = 0,
+	RF24_CRC_8,
+	RF24_CRC_16
+}rf24_crclength_e;
+
 #endif

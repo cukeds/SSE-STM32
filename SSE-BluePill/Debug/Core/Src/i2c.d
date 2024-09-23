@@ -29,8 +29,8 @@ Core/Src/i2c.o: ../Core/Src/i2c.c ../Core/Inc/i2c.h ../Core/Inc/main.h \
  ../Core/Inc/bsp_rc522.h ../Core/Inc/rc522.h ../Core/Inc/bsp_hcsr501.h \
  ../Core/Inc/bsp_lcd.h ../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h ../../Common/Inc/bsp_rf.h \
- ../../Common/Inc/nrf24l01p.h ../Core/Inc/spi.h ../Core/Inc/defines.h \
- ../../Common/Inc/Util.h
+ ../../Common/Inc/nrf24.h ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h \
+ ../Core/Inc/defines.h ../../Common/Inc/Util.h
 ../Core/Inc/i2c.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -69,7 +69,8 @@ Core/Src/i2c.o: ../Core/Src/i2c.c ../Core/Inc/i2c.h ../Core/Inc/main.h \
 ../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h:
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../../Common/Inc/bsp_rf.h:
-../../Common/Inc/nrf24l01p.h:
+../../Common/Inc/nrf24.h:
+../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/defines.h:
 ../../Common/Inc/Util.h:

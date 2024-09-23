@@ -58,7 +58,6 @@ uint8_t status = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-
 /* USER CODE BEGIN PFP */
 
 void received_message();
@@ -125,7 +124,10 @@ int main(void)
 		  HAL_ADC_Start_IT(&hadc1);
 	  }
     /* USER CODE END WHILE */
-
+  	if (nRF24_GetStatus_RXFIFO() != nRF24_STATUS_RXFIFO_EMPTY) {
+	  _BSP_RF_ReceiveMessage();
+	  BSP_RF_ReadData(rx_data);
+  	}
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -188,11 +190,8 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
 		}else{
 			tx_data[7] = 2;
 		}
-		HAL_GPIO_TogglePin(GPIOD, LED_TX_Pin);
-		BSP_RF_Sending();
-		BSP_RF_SendMessage(tx_data);
-		BSP_RF_Listening();
-		HAL_GPIO_TogglePin(GPIOD, LED_TX_Pin);
+
+		BSP_RF_SetAck(tx_data);
 	}
 }
 
@@ -203,18 +202,10 @@ void received_message()
 	toHandleInterrupts += BSP_RF_IrqHandler();
 	BSP_RF_ReadData(rx_data);
 	HAL_GPIO_TogglePin(GPIOD, LED_RX_Pin);
-
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-//	if(GPIO_Pin == GPIO_PIN_13){
-//		BSP_HCSR501_Init();
-//	}
-//	if(GPIO_Pin == HCSR501_PIN){
-//		toHandleInterruptsLCD++;
-//
-//	}
 	if(GPIO_Pin == NRF24L01P_IRQ_PIN_NUMBER)
 	{
 		received_message();

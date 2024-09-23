@@ -1,7 +1,8 @@
 ExtSrc/bsp_rf.o: \
  C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c \
- ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24l01p.h ../Core/Inc/spi.h \
- ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h \
+ ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h ../Core/Inc/main.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -33,7 +34,8 @@ ExtSrc/bsp_rf.o: \
  ../Drivers/CMSIS/Include/cmsis_gcc.h ../Core/Inc/defines.h \
  ../../Common/Inc/Util.h
 ../../Common/Inc/bsp_rf.h:
-../../Common/Inc/nrf24l01p.h:
+../../Common/Inc/nrf24.h:
+../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:

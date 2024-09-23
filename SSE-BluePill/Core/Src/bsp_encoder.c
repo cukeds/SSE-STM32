@@ -30,6 +30,11 @@ inline int16_t BSP_ENCODER_GetCount(){
 	return bsp_count;
 }
 inline int16_t BSP_ENCODER_GetSpeed(){
+	static int16_t speed_count = 0;
+	if(GetMS() % 500 == 0){
+		speed = (bsp_count - speed_count)*2; // speed in counts/sec
+		speed_count = bsp_count;
+	}
 	return speed;
 }
 inline int16_t BSP_ENCODER_GetDirection(){

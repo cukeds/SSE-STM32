@@ -43,6 +43,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+static uint16_t milliseconds=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -185,15 +186,8 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
-	static int16_t speed_count = 0;
-	static uint16_t milliseconds = 0;
-	int16_t count = BSP_ENCODER_GetCount();
 	milliseconds++;
-	if(milliseconds == 500){
-		BSP_ENCODER_WriteSpeed((count - speed_count)*2); // speed in counts/sec
-		speed_count = count;
-		milliseconds = 0;
-	}
+
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
@@ -249,5 +243,7 @@ void EXTI15_10_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-
+uint16_t GetMS(void){
+	return milliseconds;
+}
 /* USER CODE END 1 */

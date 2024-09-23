@@ -33,4 +33,5 @@
 "./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
 "./ExtSrc/Util.o"
 "./ExtSrc/bsp_rf.o"
-"./ExtSrc/nrf24l01p.o"
+"./ExtSrc/nrf24.o"
+"./ExtSrc/nrf24_hal.o"

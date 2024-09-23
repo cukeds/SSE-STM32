@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="ADC"/>
+		<item key="selection" value="nRF24_REG_CONFIG"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="adc"/>
-			<item value="init"/>
-			<item value="cs_low()"/>
-			<item value="read_reg"/>
-			<item value="cs_high"/>
-			<item value="cs_low"/>
-			<item value="delay"/>
-			<item value="reset"/>
-			<item value="irq"/>
-			<item value="DELAY_MS(2)"/>
-			<item value="exti"/>
-			<item value="GPIO_PIN"/>
-			<item value="pc13"/>
-			<item value="SP"/>
-			<item value="SP5"/>
+			<item value="nRF24_REG_CONFIG"/>
+			<item value="nRF24_IRQ_PIN"/>
+			<item value="nRF24_IRQ_PORT"/>
+			<item value="nRF24_CSN_PIN"/>
+			<item value="nRF24_CSN_PORT"/>
+			<item value="nRF24_CE_PIN"/>
+			<item value="nRF24_CE_PORT"/>
+			<item value="REG_CONFIG"/>
+			<item value="start"/>
+			<item value="IRQ"/>
+			<item value="BSP_RF_Init"/>
+			<item value="print"/>
+			<item value="air_data_rate"/>
+			<item value="rf24_datarate_e"/>
+			<item value="nrfSPI"/>
 		</list>
 		<list key="replacehistory">
+			<item value="NRF24L01P_IRQ_PIN_NUMBER"/>
+			<item value="NRF24L01P_IRQ_PIN_PORT"/>
+			<item value="NRF24L01P_SPI_CS_PIN_NUMBER"/>
+			<item value="NRF24L01P_SPI_CS_PIN_PORT"/>
+			<item value="NRF24L01P_CE_PIN_NUMBER"/>
+			<item value="NRF24L01P_CE_PIN_PORT"/>
+			<item value="rf24_datarate_e"/>
+			<item value="air_data_rate"/>
 			<item value=""/>
 			<item value="DELAY_MS(5)"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="748"/>
-		<item key="DIALOG_Y_ORIGIN" value="288"/>
+		<item key="DIALOG_X_ORIGIN" value="756"/>
+		<item key="DIALOG_Y_ORIGIN" value="124"/>
 		<item key="DIALOG_WIDTH" value="322"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_HEIGHT" value="390"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

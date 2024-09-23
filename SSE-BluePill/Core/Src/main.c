@@ -49,8 +49,8 @@
 
 uint8_t sNum[5];
 uint8_t motion[5];
-int16_t button = 0;
 uint8_t config_register;
+uint16_t button=0;
 volatile unsigned long handledInterruptsLCD = 0;
 volatile unsigned long toHandleInterruptsLCD = 0;
 volatile unsigned long handledInterruptsRF = 0;
@@ -114,7 +114,7 @@ int main(void)
   lcd_params.seconds = 0;
 
 
- // BSP_ENCODER_Init();
+  BSP_ENCODER_Init();
 //  BSP_RC522_Init();
   BSP_LCD_Init(&lcd_params);
   BSP_LCD_SendMessage("Hola", 0, 0, true);
@@ -126,9 +126,9 @@ int main(void)
   rf_params.retransmit_count = NRF24L01P_RETRANSMIT_COUNT;
   BSP_RF_Init(&rf_params);
   BSP_RF_Sending();
-  BSP_RF_SendMessage(tx_data);
-  BSP_RF_Listening();
+  HAL_GPIO_WritePin(GPIOC, LED_Pin, GPIO_PIN_SET);
   uint8_t last_state = 0;
+  uint8_t waiting = 1;
 
 
   /* USER CODE END 2 */
@@ -138,13 +138,20 @@ int main(void)
   while (1)
   {
 
-	  if(handledInterruptsRF != toHandleInterruptsRF){
-		  BSP_RF_Sending();
+	  button = BSP_ENCODER_GetSwitch();
+	  if(button && waiting){
+		  tx_data[0] = BSP_ENCODER_GetDirection() > 0 ? 1 : 2;
+		  tx_data[1] = (uint8_t) BSP_ENCODER_GetCount() & 0xFF; // 0..7
+		  tx_data[2] = (uint8_t) (BSP_ENCODER_GetCount() >> 8) & 0xFF;// 8..15
+		  tx_data[3] = (uint8_t) (BSP_ENCODER_GetCount() >> 16) & 0xFF;// 16..23
+		  tx_data[4] = (uint8_t) (BSP_ENCODER_GetCount() >> 24) & 0xFF;// 24..31
+		  HAL_GPIO_TogglePin(GPIOC, LED_Pin);
 		  BSP_RF_SendMessage(tx_data);
-		  BSP_RF_Listening();
-		  for(int i = 0; i < 8; i++){
-			  tx_data[i]++;
-		  }
+		  HAL_GPIO_TogglePin(GPIOC, LED_Pin);
+		  waiting = 1;
+	  }
+
+	  if(handledInterruptsRF != toHandleInterruptsRF){
 		  handledInterruptsRF = toHandleInterruptsRF;
 		  if(rx_data[7] == 1 && last_state != 1){
 			  last_state = 1;
@@ -156,7 +163,9 @@ int main(void)
 			  last_state = 0;
 			  BSP_LCD_SendMessage("No connection", 0, 0, true);
 		  }
+		  waiting = 1;
 	  }
+
 
 	  //
 	  //00001010
@@ -212,8 +221,11 @@ void SystemClock_Config(void)
 
 void received_message()
 {
+	HAL_GPIO_TogglePin(GPIOC, LED_Pin);
 	toHandleInterruptsRF += BSP_RF_IrqHandler();
 	BSP_RF_ReadData(rx_data);
+	HAL_GPIO_TogglePin(GPIOC, LED_Pin);
+
 }
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {

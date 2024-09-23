@@ -1,0 +1,118 @@
+#include "bsp_rf.h"
+static BSP_RF_Params_TypeDef *params;
+static BSP_RF_MODE_TypeDef mode = NONE;
+static uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH];
+static uint8_t ack[NRF24L01P_PAYLOAD_LENGTH];
+static uint64_t pipeAddress = NRF24L01P_ADDRESS;
+
+
+void _BSP_RF_ReceiveMessage();
+
+void BSP_RF_Init(BSP_RF_Params_TypeDef* _params)
+{
+	NRF24_begin(NRF24L01P_SPI_CS_PIN_PORT, NRF24L01P_SPI_CS_PIN_NUMBER, NRF24L01P_CE_PIN_PORT, NRF24L01P_CE_PIN_NUMBER, NRF24L01P_SPI, _params->channel, _params->rate);
+	NRF24_setAutoAck(true);
+	NRF24_setPayloadSize(NRF24L01P_PAYLOAD_LENGTH);
+	NRF24_enableDynamicPayloads();
+	NRF24_enableAckPayload();
+	params = _params;
+}
+
+void BSP_RF_Sending(){
+	NRF24_stopListening();
+	NRF24_openWritingPipe(pipeAddress);
+	mode = TX;
+}
+
+nRF24_TXResult BSP_RF_SendMessage(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH])
+{
+	volatile uint32_t wait = nRF24_WAIT_TIMEOUT;
+		uint8_t status;
+
+		// Deassert the CE pin (in case if it still high)
+		nRF24_CE_L();
+
+		// Transfer a data from the specified buffer to the TX FIFO
+		nRF24_WritePayload(pBuf, length);
+
+		// Start a transmission by asserting CE pin (must be held at least 10us)
+		nRF24_CE_H();
+
+		// Poll the transceiver status register until one of the following flags will be set:
+		//   TX_DS  - means the packet has been transmitted
+		//   MAX_RT - means the maximum number of TX retransmits happened
+		// note: this solution is far from perfect, better to use IRQ instead of polling the status
+		do {
+			status = nRF24_GetStatus();
+			if (status & (nRF24_FLAG_TX_DS | nRF24_FLAG_MAX_RT)) {
+				break;
+			}
+		} while (wait--);
+
+		// Deassert the CE pin (Standby-II --> Standby-I)
+		nRF24_CE_L();
+
+		if (!wait) {
+			// Timeout
+			return nRF24_TX_TIMEOUT;
+		}
+
+		// Check the flags in STATUS register
+		UART_SendStr("[");
+		UART_SendHex8(status);
+		UART_SendStr("] ");
+
+		// Clear pending IRQ flags
+	    nRF24_ClearIRQFlags();
+
+		if (status & nRF24_FLAG_MAX_RT) {
+			// Auto retransmit counter exceeds the programmed maximum limit (FIFO is not removed)
+			return nRF24_TX_MAXRT;
+		}
+
+		if (status & nRF24_FLAG_TX_DS) {
+			// Successful transmission
+			return nRF24_TX_SUCCESS;
+		}
+
+		// Some banana happens, a payload remains in the TX FIFO, flush it
+		nRF24_FlushTX();
+
+		return nRF24_TX_ERROR;
+}
+
+void BSP_RF_Listening()
+{
+	NRF24_openReadingPipe(1, pipeAddress);
+	NRF24_startListening();
+	mode = RX;
+}
+
+void _BSP_RF_ReceiveMessage(){
+
+	if(NRF24_available())
+	{
+		NRF24_writeAckPayload(1, ack, NRF24L01P_PAYLOAD_LENGTH);
+	}
+}
+
+void BSP_RF_SetAck(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(ack, payload, NRF24L01P_PAYLOAD_LENGTH);
+}
+
+uint8_t BSP_RF_IrqHandler(){
+	uint8_t ret = 0;
+	if(mode == RX){
+		_BSP_RF_ReceiveMessage();
+		ret = 1;
+	}
+	else if(mode == TX){
+		NRF24_read(rx_data, NRF24L01P_PAYLOAD_LENGTH);
+	}
+
+	return ret;
+}
+
+void BSP_RF_ReadData(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(payload, rx_data, NRF24L01P_PAYLOAD_LENGTH);
+}

@@ -28,8 +28,9 @@ Core/Src/gpio.o: ../Core/Src/gpio.c ../Core/Inc/gpio.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
- ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24l01p.h ../Core/Inc/spi.h \
- ../Core/Inc/defines.h ../../Common/Inc/Util.h
+ ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h \
+ ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h ../Core/Inc/defines.h \
+ ../../Common/Inc/Util.h
 ../Core/Inc/gpio.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -62,7 +63,8 @@ Core/Src/gpio.o: ../Core/Src/gpio.c ../Core/Inc/gpio.h ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../../Common/Inc/bsp_rf.h:
-../../Common/Inc/nrf24l01p.h:
+../../Common/Inc/nrf24.h:
+../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/defines.h:
 ../../Common/Inc/Util.h:

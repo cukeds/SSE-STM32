@@ -1,17 +1,21 @@
-21:30:59 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+04:41:26 **** Incremental Build of configuration Debug for project SSE-BluePill ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:79:17: warning: unused variable 'payload_length' [-Wunused-variable]
+   79 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
+      |                 ^~~~~~~~~~~~~~
 arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: SSE-BluePill.elf
  
 arm-none-eabi-size  SSE-BluePill.elf 
 arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
    text	   data	    bss	    dec	    hex	filename
-  17132	     20	   1884	  19036	   4a5c	SSE-BluePill.elf
+  16088	     20	   1876	  17984	   4640	SSE-BluePill.elf
 Finished building: default.size.stdout
  
 Finished building: SSE-BluePill.list
  
 
-21:31:00 Build Finished. 0 errors, 0 warnings. (took 758ms)
+04:41:27 Build Finished. 0 errors, 1 warnings. (took 757ms)
 
