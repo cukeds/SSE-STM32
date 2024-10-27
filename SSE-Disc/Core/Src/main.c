@@ -20,6 +20,7 @@
 #include "main.h"
 #include "adc.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -101,6 +102,8 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_ADC1_Init();
+  MX_TIM1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
 
@@ -124,10 +127,7 @@ int main(void)
 		  HAL_ADC_Start_IT(&hadc1);
 	  }
     /* USER CODE END WHILE */
-  	if (nRF24_GetStatus_RXFIFO() != nRF24_STATUS_RXFIFO_EMPTY) {
-	  _BSP_RF_ReceiveMessage();
-	  BSP_RF_ReadData(rx_data);
-  	}
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
