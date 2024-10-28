@@ -14,3 +14,6 @@ mode
 voltage
 toHandleInterruptsRF
 toHandleInterrupts
+app_data
+distance
+duty_cycle

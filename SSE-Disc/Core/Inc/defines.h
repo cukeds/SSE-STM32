@@ -83,3 +83,18 @@ typedef enum {
 	RF24_CRC_16
 }rf24_crclength_e;
 #endif
+
+// Defines HCSR04
+
+#define HCSR04_TRIG_PIN GPIO_PIN_8
+#define HCSR04_TRIG_PORT GPIOE
+
+#define HCSR04_ECHO_PIN GPIO_PIN_9
+#define HCSR04_ECHO_PORT GPIOE
+
+#define HCSR04_TIM TIM1
+#define HCSR04_TIM_CHANNEL TIM_CHANNEL_1
+#define HCSR04_TIM_INSTANCE htim1
+#define HCSR04_TIM_CLK 72
+
+#define HCSR04_SWIER_LINE GPIO_PIN_8

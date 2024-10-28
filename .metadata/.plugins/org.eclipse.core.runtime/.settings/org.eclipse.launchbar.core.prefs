@@ -7,6 +7,6 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE\ Debug/activeLaunchMode=deb
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE-BluePill\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE-BluePill\ Debug/activeLaunchTarget=null\:---
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE-Disc\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SSE-Disc\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:oled\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:sse_disc\ Debug/activeLaunchMode=run

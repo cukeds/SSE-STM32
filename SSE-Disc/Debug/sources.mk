@@ -40,6 +40,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Core/app \
 Drivers/STM32F4xx_HAL_Driver/Src \
 ExtSrc \
 

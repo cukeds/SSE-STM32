@@ -1,283 +1,254 @@
-04:23:30 **** Incremental Build of configuration Debug for project SSE-BluePill ****
+00:36:59 **** Incremental Build of configuration Debug for project SSE-Disc ****
 make -j8 all 
-arm-none-eabi-size  SSE-BluePill.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16196	     20	   1876	  18092	   46ac	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-04:23:50 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-size  SSE-BluePill.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16196	     20	   1876	  18092	   46ac	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-04:25:05 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-size  SSE-BluePill.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16196	     20	   1876	  18092	   46ac	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-04:27:00 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:78:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   78 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
-arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-BluePill.elf
- 
-arm-none-eabi-size  SSE-BluePill.elf 
-arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
-   text	   data	    bss	    dec	    hex	filename
-  16084	     20	   1876	  17980	   463c	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-BluePill.list
- 
-04:28:07 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-size  SSE-BluePill.elf 
-   text	   data	    bss	    dec	    hex	filename
-  16084	     20	   1876	  17980	   463c	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-04:28:54 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/nrf24_hal.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c: In function 'nRF24_LL_RW':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:11:28: error: 'new' undeclared (first use in this function)
-   11 |         uint8_t* pRxData = new uint8_t;
-      |                            ^~~
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:11:28: note: each undeclared identifier is reported only once for each function it appears in
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:11:32: error: expected ',' or ';' before 'uint8_t'
-   11 |         uint8_t* pRxData = new uint8_t;
-      |                                ^~~~~~~
-make: *** [ExtSrc/subdir.mk:34: ExtSrc/nrf24_hal.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-04:30:31 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/nrf24_hal.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c: In function 'nRF24_LL_RW':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:11:28: error: empty scalar initializer
-   11 |         uint8_t* pRxData = {};
-      |                            ^
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:11:28: note: (near initialization for 'pRxData')
-make: *** [ExtSrc/subdir.mk:34: ExtSrc/nrf24_hal.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-04:30:39 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/nrf24_hal.o"
-arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-BluePill.elf
- 
-arm-none-eabi-size  SSE-BluePill.elf 
-arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
-   text	   data	    bss	    dec	    hex	filename
-  16088	     20	   1876	  17984	   4640	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-BluePill.list
- 
-04:31:12 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/nrf24_hal.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:78:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   78 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
-arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-Disc.elf
- 
-arm-none-eabi-size  SSE-Disc.elf 
-arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
-   text	   data	    bss	    dec	    hex	filename
-  13984	     12	   1792	  15788	   3dac	SSE-Disc.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-Disc.list
- 
-04:32:54 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:128:11: warning: implicit declaration of function '_BSP_RF_ReceiveMessage'; did you mean 'BSP_RF_SendMessage'? [-Wimplicit-function-declaration]
-  128 |           _BSP_RF_ReceiveMessage();
-      |           ^~~~~~~~~~~~~~~~~~~~~~
-      |           BSP_RF_SendMessage
-../Core/Src/main.c:129:11: error: too few arguments to function 'BSP_RF_ReadData'
-  129 |           BSP_RF_ReadData();
-      |           ^~~~~~~~~~~~~~~
-In file included from ../Core/Inc/main.h:34,
-                 from ../Core/Src/main.c:20:
-../../Common/Inc/bsp_rf.h:29:6: note: declared here
-   29 | void BSP_RF_ReadData(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]);
-      |      ^~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
-../Core/Src/main.c:194:17: warning: implicit declaration of function 'BSP_RF_SetAck' [-Wimplicit-function-declaration]
-  194 |                 BSP_RF_SetAck(tx_data);
-      |                 ^~~~~~~~~~~~~
-make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-04:33:10 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:128:11: warning: implicit declaration of function '_BSP_RF_ReceiveMessage'; did you mean 'BSP_RF_SendMessage'? [-Wimplicit-function-declaration]
-  128 |           _BSP_RF_ReceiveMessage();
-      |           ^~~~~~~~~~~~~~~~~~~~~~
-      |           BSP_RF_SendMessage
-../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
-../Core/Src/main.c:194:17: warning: implicit declaration of function 'BSP_RF_SetAck' [-Wimplicit-function-declaration]
-  194 |                 BSP_RF_SetAck(tx_data);
-      |                 ^~~~~~~~~~~~~
-arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-Disc.elf
- 
-arm-none-eabi-size  SSE-Disc.elf 
-arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
-   text	   data	    bss	    dec	    hex	filename
-  14028	     12	   1792	  15832	   3dd8	SSE-Disc.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-Disc.list
- 
-04:36:14 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24.d" -MT"ExtSrc/nrf24.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/nrf24.o"
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/nrf24_hal.o"
-arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
-arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:78:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   78 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:128:11: warning: implicit declaration of function '_BSP_RF_ReceiveMessage'; did you mean 'BSP_RF_SendMessage'? [-Wimplicit-function-declaration]
-  128 |           _BSP_RF_ReceiveMessage();
-      |           ^~~~~~~~~~~~~~~~~~~~~~
-      |           BSP_RF_SendMessage
-../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
-../Core/Src/main.c:194:17: warning: implicit declaration of function 'BSP_RF_SetAck' [-Wimplicit-function-declaration]
-  194 |                 BSP_RF_SetAck(tx_data);
-      |                 ^~~~~~~~~~~~~
-arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-Disc.elf
- 
-arm-none-eabi-size  SSE-Disc.elf 
-arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
-   text	   data	    bss	    dec	    hex	filename
-  14024	     12	   1792	  15828	   3dd4	SSE-Disc.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-Disc.list
- 
-04:36:52 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24.d" -MT"ExtSrc/nrf24.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/nrf24.o"
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/nrf24_hal.o"
-arm-none-eabi-gcc "../Core/Src/bsp_encoder.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_encoder.d" -MT"Core/Src/bsp_encoder.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/bsp_encoder.o"
-arm-none-eabi-gcc "../Core/Src/bsp_hcsr501.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_hcsr501.d" -MT"Core/Src/bsp_hcsr501.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/bsp_hcsr501.o"
-arm-none-eabi-gcc "../Core/Src/bsp_lcd.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_lcd.d" -MT"Core/Src/bsp_lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/bsp_lcd.o"
-arm-none-eabi-gcc "../Core/Src/bsp_rc522.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_rc522.d" -MT"Core/Src/bsp_rc522.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/bsp_rc522.o"
-arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:78:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   78 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
-../Core/Src/bsp_encoder.c: In function 'BSP_ENCODER_GetSpeed':
-../Core/Src/bsp_encoder.c:34:12: warning: implicit declaration of function 'GetMS' [-Wimplicit-function-declaration]
-   34 |         if(GetMS() % 500 == 0){
-      |            ^~~~~
-../Core/Src/bsp_lcd.c: In function 'Initializing':
-../Core/Src/bsp_lcd.c:9:9: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
-    9 |         itoa(params->setup_time - *(params->seconds), time, 10);
-      |         ^~~~
-arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/spi.o"
-arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
-arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
-arm-none-eabi-gcc "../Core/ECUAL/I2C_LCD/I2C_LCD.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/ECUAL/I2C_LCD/I2C_LCD.d" -MT"Core/ECUAL/I2C_LCD/I2C_LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/ECUAL/I2C_LCD/I2C_LCD.o"
-arm-none-eabi-gcc "../Core/ECUAL/I2C_LCD/I2C_LCD_cfg.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/ECUAL/I2C_LCD/I2C_LCD_cfg.d" -MT"Core/ECUAL/I2C_LCD/I2C_LCD_cfg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/ECUAL/I2C_LCD/I2C_LCD_cfg.o"
-arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-BluePill.elf
- 
-arm-none-eabi-size  SSE-BluePill.elf 
-arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
-   text	   data	    bss	    dec	    hex	filename
-  16084	     20	   1876	  17980	   463c	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-BluePill.list
- 
-04:37:11 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-size  SSE-Disc.elf 
-   text	   data	    bss	    dec	    hex	filename
-  14024	     12	   1792	  15828	   3dd4	SSE-Disc.elf
-Finished building: default.size.stdout
- 
-04:40:42 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_Sending':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:44:9: warning: implicit declaration of function 'nrf24_CE_H'; did you mean 'nRF24_CE_H'? [-Wimplicit-function-declaration]
-   44 |         nrf24_CE_H();
-      |         ^~~~~~~~~~
-      |         nRF24_CE_H
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24.d" -MT"ExtSrc/nrf24.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/nrf24.o"
+arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/nrf24_hal.d" -MT"ExtSrc/nrf24_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/nrf24_hal.o"
+arm-none-eabi-gcc "../Core/app/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/app/app.d" -MT"Core/app/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/app/app.o"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/bsp_hcsr04.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_hcsr04.d" -MT"Core/Src/bsp_hcsr04.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bsp_hcsr04.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
 C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:79:17: warning: unused variable 'payload_length' [-Wunused-variable]
    79 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
       |                 ^~~~~~~~~~~~~~
-arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./ExtSrc/bsp_rf.o: in function `BSP_RF_Sending':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:44: undefined reference to `nrf24_CE_H'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:90: SSE-BluePill.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-04:41:26 **** Incremental Build of configuration Debug for project SSE-BluePill ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m3 -std=gnu18 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "ExtSrc/bsp_rf.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:79:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   79 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
-arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: SSE-BluePill.elf
- 
-arm-none-eabi-size  SSE-BluePill.elf 
-arm-none-eabi-objdump -h -S SSE-BluePill.elf  > "SSE-BluePill.list"
-   text	   data	    bss	    dec	    hex	filename
-  16088	     20	   1876	  17984	   4640	SSE-BluePill.elf
-Finished building: default.size.stdout
- 
-Finished building: SSE-BluePill.list
- 
-04:41:47 **** Incremental Build of configuration Debug for project SSE-Disc ****
-make -j8 all 
-arm-none-eabi-gcc "C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"ExtSrc/bsp_rf.d" -MT"ExtSrc/bsp_rf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ExtSrc/bsp_rf.o"
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c: In function 'BSP_RF_IrqHandler':
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/bsp_rf.c:79:17: warning: unused variable 'payload_length' [-Wunused-variable]
-   79 |         uint8_t payload_length = NRF24L01P_PAYLOAD_LENGTH;
-      |                 ^~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
 arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: SSE-Disc.elf
  
 arm-none-eabi-size  SSE-Disc.elf 
 arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
    text	   data	    bss	    dec	    hex	filename
-  14024	     12	   1792	  15828	   3dd4	SSE-Disc.elf
+  22196	     12	   1996	  24204	   5e8c	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:37:03 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22196	     12	   1996	  24204	   5e8c	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+00:37:13 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-size  SSE-Disc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22196	     12	   1996	  24204	   5e8c	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+00:37:43 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22352	     12	   1996	  24360	   5f28	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:39:20 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	     12	   1996	  24272	   5ed0	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:40:35 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/bsp_hcsr04.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_hcsr04.d" -MT"Core/Src/bsp_hcsr04.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bsp_hcsr04.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22268	     12	   1996	  24276	   5ed4	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:41:12 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22272	     12	   1996	  24280	   5ed8	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:45:50 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22332	     12	   1996	  24340	   5f14	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:47:27 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:87:1: warning: statement with no effect [-Wunused-value]
+   87 | 0  HAL_Init();
+      | ^
+../Core/Src/main.c:87:2: error: expected ';' before 'HAL_Init'
+   87 | 0  HAL_Init();
+      |  ^ ~~~~~~~~
+      |  ;
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:47:45 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:89:1: warning: statement with no effect [-Wunused-value]
+   89 | 0  HAL_Init();
+      | ^
+../Core/Src/main.c:89:2: error: expected ';' before 'HAL_Init'
+   89 | 0  HAL_Init();
+      |  ^ ~~~~~~~~
+      |  ;
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:47:59 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22324	     12	   1996	  24332	   5f0c	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:49:40 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PWM_PulseFinishedCallback':
+../Core/Src/main.c:207:59: error: expected ')' before ';' token
+  207 |         duty_cycle = (float) (new_min(distance, 100) / 100;
+      |                              ~                            ^
+      |                                                           )
+../Core/Src/main.c:214:10: error: expected ';' before '}' token
+  214 |         }
+      |          ^
+      |          ;
+  215 | 
+  216 | }
+      | ~         
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:50:14 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PWM_PulseFinishedCallback':
+../Core/Src/main.c:207:59: error: expected ')' before ';' token
+  207 |         duty_cycle = (float) (new_min(distance, 100) / 100;
+      |                              ~                            ^
+      |                                                           )
+../Core/Src/main.c:214:10: error: expected ';' before '}' token
+  214 |         }
+      |          ^
+      |          ;
+  215 | 
+  216 | }
+      | ~         
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:50:27 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22316	     12	   1996	  24324	   5f04	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:51:03 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22312	     12	   1996	  24320	   5f00	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+00:52:25 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22324	     12	   1996	  24332	   5f0c	SSE-Disc.elf
+Finished building: default.size.stdout
+ 
+Finished building: SSE-Disc.list
+ 
+01:01:12 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:130:14: error: 'duty_cycle' undeclared (first use in this function)
+  130 |           if(duty_cycle <= 0.5){
+      |              ^~~~~~~~~~
+../Core/Src/main.c:130:14: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+01:01:27 **** Incremental Build of configuration Debug for project SSE-Disc ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SSE-Disc.elf
+ 
+arm-none-eabi-size  SSE-Disc.elf 
+arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
+   text	   data	    bss	    dec	    hex	filename
+  22376	     12	   1996	  24384	   5f40	SSE-Disc.elf
 Finished building: default.size.stdout
  
 Finished building: SSE-Disc.list

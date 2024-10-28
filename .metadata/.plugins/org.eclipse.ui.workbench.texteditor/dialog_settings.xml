@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="nRF24_REG_CONFIG"/>
+		<item key="selection" value="distance"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="distance"/>
+			<item value="EXTI"/>
+			<item value="delay"/>
+			<item value="Dwt"/>
+			<item value="DWT_"/>
+			<item value="DWT_Delay_us"/>
+			<item value="base"/>
+			<item value="__"/>
+			<item value="systick"/>
+			<item value="Systick"/>
+			<item value="htim1"/>
+			<item value="tim1"/>
+			<item value="bool"/>
 			<item value="nRF24_REG_CONFIG"/>
 			<item value="nRF24_IRQ_PIN"/>
-			<item value="nRF24_IRQ_PORT"/>
-			<item value="nRF24_CSN_PIN"/>
-			<item value="nRF24_CSN_PORT"/>
-			<item value="nRF24_CE_PIN"/>
-			<item value="nRF24_CE_PORT"/>
-			<item value="REG_CONFIG"/>
-			<item value="start"/>
-			<item value="IRQ"/>
-			<item value="BSP_RF_Init"/>
-			<item value="print"/>
-			<item value="air_data_rate"/>
-			<item value="rf24_datarate_e"/>
-			<item value="nrfSPI"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="DELAY_US"/>
 			<item value="NRF24L01P_IRQ_PIN_NUMBER"/>
 			<item value="NRF24L01P_IRQ_PIN_PORT"/>
 			<item value="NRF24L01P_SPI_CS_PIN_NUMBER"/>
@@ -33,7 +35,6 @@
 			<item value="NRF24L01P_CE_PIN_PORT"/>
 			<item value="rf24_datarate_e"/>
 			<item value="air_data_rate"/>
-			<item value=""/>
 			<item value="DELAY_MS(5)"/>
 		</list>
 	</section>

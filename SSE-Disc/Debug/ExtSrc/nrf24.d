@@ -30,8 +30,13 @@ ExtSrc/nrf24.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h \
- ../../Common/Inc/Util.h ../Core/Inc/defines.h
+ ../../Common/Inc/Util.h ../Core/Inc/defines.h ../Core/Inc/bsp_hcsr04.h \
+ ../Core/Inc/defines.h ../../Common/Inc/Util.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app_defines.h
 ../../Common/Inc/nrf24.h:
 ../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
@@ -65,7 +70,14 @@ ExtSrc/nrf24.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../../Common/Inc/bsp_rf.h:
 ../../Common/Inc/nrf24.h:
 ../../Common/Inc/Util.h:
 ../Core/Inc/defines.h:
+../Core/Inc/bsp_hcsr04.h:
+../Core/Inc/defines.h:
+../../Common/Inc/Util.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app_defines.h:

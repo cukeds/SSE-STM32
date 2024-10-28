@@ -32,6 +32,8 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_rf.h"
+#include "bsp_hcsr04.h"
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -76,8 +78,6 @@ void Error_Handler(void);
 #define IRQ_EXTI_IRQn EXTI9_5_IRQn
 #define HC_Trig_Pin GPIO_PIN_8
 #define HC_Trig_GPIO_Port GPIOE
-#define HC_Echo_Pin GPIO_PIN_9
-#define HC_Echo_GPIO_Port GPIOE
 #define LED_TX_Pin GPIO_PIN_12
 #define LED_TX_GPIO_Port GPIOD
 #define LED_RX_Pin GPIO_PIN_13

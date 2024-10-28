@@ -54,7 +54,8 @@ uint32_t adc_value;
 volatile uint8_t valid = 0;
 volatile unsigned long handledInterrupts = 0;
 volatile unsigned long toHandleInterrupts = 0;
-uint8_t status = 0;
+
+float duty_cycle = 0.0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -104,8 +105,13 @@ int main(void)
   MX_ADC1_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_4);
 
 
   BSP_RF_Params_TypeDef rf_params = {0};
@@ -115,16 +121,17 @@ int main(void)
   BSP_RF_Init(&rf_params);
   BSP_RF_Listening();
 
-  HAL_ADC_Start_IT(&hadc1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if(valid == 1){
-		  valid = 0;
-		  HAL_ADC_Start_IT(&hadc1);
+	  app();
+	  if(duty_cycle <= 0.5){
+		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_SET);
+	  }else{
+		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_RESET);
 	  }
     /* USER CODE END WHILE */
 
@@ -171,7 +178,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
@@ -180,20 +187,6 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc){
-	if(hadc == &hadc1){
-		 adc_value = HAL_ADC_GetValue(&hadc1);
-		 voltage = (double) (adc_value * 8 / 10000);
-		 valid = 1;
-		if(voltage > 0){
-			tx_data[7] = 1;
-		}else{
-			tx_data[7] = 2;
-		}
-
-		BSP_RF_SetAck(tx_data);
-	}
-}
 
 
 void received_message()
@@ -211,8 +204,22 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		received_message();
 	}
 
+}
+
+#define min(x,y) (((x) <= (y)) ? (x) : (y))
+#define max(x,y) (((x) >= (y)) ? (x) : (y))
+void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
+	uint8_t distance = HAL_HCSR04_GetDistance();
+	duty_cycle =  ((float) max(min(distance, 100), 20) / 100);
+	uint32_t pulse_width = 100 * duty_cycle;
+	if(htim == &htim2){
+		TIM2->CCR2 = pulse_width;
+		TIM2->CCR3 = pulse_width;
+		TIM2->CCR4 = pulse_width;
+	}
 
 }
+
 /* USER CODE END 4 */
 
 /**
