@@ -1,5 +1,6 @@
 "./Core/Src/adc.o"
 "./Core/Src/bsp_hcsr04.o"
+"./Core/Src/bsp_relay.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/spi.o"

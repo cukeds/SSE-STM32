@@ -1,0 +1,8 @@
+#include "stm32f4xx_hal_gpio.h"
+#include "gpio.h"
+#pragma once
+
+
+void BSP_RELAY_ON();
+
+void BSP_RELAY_OFF();

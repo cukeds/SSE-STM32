@@ -59,8 +59,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define RELE_Pin GPIO_PIN_1
-#define RELE_GPIO_Port GPIOH
+#define RELE_Pin GPIO_PIN_15
+#define RELE_GPIO_Port GPIOC
 #define Barrier_IN_Pin GPIO_PIN_0
 #define Barrier_IN_GPIO_Port GPIOA
 #define RGB_R_Pin GPIO_PIN_1

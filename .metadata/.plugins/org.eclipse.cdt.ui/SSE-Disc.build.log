@@ -1,17 +1,17 @@
-01:01:27 **** Incremental Build of configuration Debug for project SSE-Disc ****
+06:46:00 **** Incremental Build of configuration Debug for project SSE-Disc ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/bsp_relay.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../../Common/Inc -I"C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bsp_relay.d" -MT"Core/Src/bsp_relay.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bsp_relay.o"
 arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: SSE-Disc.elf
  
 arm-none-eabi-size  SSE-Disc.elf 
 arm-none-eabi-objdump -h -S SSE-Disc.elf  > "SSE-Disc.list"
    text	   data	    bss	    dec	    hex	filename
-  22376	     12	   1996	  24384	   5f40	SSE-Disc.elf
+  22360	     12	   1996	  24368	   5f30	SSE-Disc.elf
 Finished building: default.size.stdout
  
 Finished building: SSE-Disc.list
  
 
-01:01:28 Build Finished. 0 errors, 0 warnings. (took 864ms)
+06:46:01 Build Finished. 0 errors, 0 warnings. (took 805ms)
 

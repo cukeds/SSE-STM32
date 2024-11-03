@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="distance"/>
+		<item key="selection" value="GPIO"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="GPIO"/>
+			<item value="gpio"/>
 			<item value="distance"/>
 			<item value="EXTI"/>
 			<item value="delay"/>
@@ -21,8 +23,6 @@
 			<item value="htim1"/>
 			<item value="tim1"/>
 			<item value="bool"/>
-			<item value="nRF24_REG_CONFIG"/>
-			<item value="nRF24_IRQ_PIN"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

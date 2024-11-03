@@ -128,11 +128,8 @@ int main(void)
   while (1)
   {
 	  app();
-	  if(duty_cycle <= 0.5){
-		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_SET);
-	  }else{
-		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_RESET);
-	  }
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -54,8 +54,8 @@ uint32_t adc_value;
 volatile uint8_t valid = 0;
 volatile unsigned long handledInterrupts = 0;
 volatile unsigned long toHandleInterrupts = 0;
-float distance = 0;
-PresenceSensor_Status presence;
+
+float duty_cycle = 0.0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -103,11 +103,15 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   MX_ADC1_Init();
+  MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-  HCSR04_Init(0, &HCSR04_TIM_INSTANCE);
+  HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_4);
 
 
   BSP_RF_Params_TypeDef rf_params = {0};
@@ -123,9 +127,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  presence = BSP_GetPresence(20.0);
-	  distance = HCSR04_Read(0, htim1);
-	  /* USER CODE END WHILE */
+	  app();
+//	  if(duty_cycle <= 0.5){
+//		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_SET);
+//	  }else{
+//		  HAL_GPIO_WritePin(RELE_GPIO_Port, RELE_Pin, GPIO_PIN_RESET);
+//	  }
+//
+	  HAL_GPIO_TogglePin(RELE_GPIO_Port, RELE_Pin);
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
@@ -196,6 +206,19 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		received_message();
 	}
 
+}
+
+#define min(x,y) (((x) <= (y)) ? (x) : (y))
+#define max(x,y) (((x) >= (y)) ? (x) : (y))
+void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
+	uint8_t distance = HAL_HCSR04_GetDistance();
+	duty_cycle =  ((float) max(min(distance, 100), 20) / 100);
+	uint32_t pulse_width = 100 * duty_cycle;
+	if(htim == &htim2){
+		TIM2->CCR2 = pulse_width;
+		TIM2->CCR3 = pulse_width;
+		TIM2->CCR4 = pulse_width;
+	}
 
 }
 
