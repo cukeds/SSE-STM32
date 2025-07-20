@@ -7,9 +7,14 @@ static int16_t bsp_count = 0;
 static int16_t direction = 0;
 static int16_t speed = 0;
 
+static boolean reset = False;
+
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
-
+	if(reset){
+		__HAL_TIM_SET_COUNTER(htim, 0);
+		reset = False;
+	}
 	counter = __HAL_TIM_GET_COUNTER(htim);
 	bsp_count = (int16_t) counter;
 
@@ -26,8 +31,8 @@ void BSP_ENCODER_Init(){
 	HAL_TIM_Encoder_Start_IT(&htim2, TIM_CHANNEL_ALL); // For 2 channels
 }
 
-inline int16_t BSP_ENCODER_GetCount(){
-	return bsp_count;
+inline uint16_t BSP_ENCODER_GetCount(){
+	return bsp_count/4;
 }
 inline int16_t BSP_ENCODER_GetSpeed(){
 	static int16_t speed_count = 0;
@@ -41,8 +46,15 @@ inline int16_t BSP_ENCODER_GetDirection(){
 	return direction;
 }
 inline int16_t BSP_ENCODER_GetSwitch(){
-	return HAL_GPIO_ReadPin(ENCODER_PORT, ENCODER_PIN);
+	return !HAL_GPIO_ReadPin(ENCODER_PORT, ENCODER_PIN);
 }
 void BSP_ENCODER_WriteSpeed(int16_t _speed){
 	speed = _speed;
 }
+
+void BSP_ENCODER_ResetEncoder(){
+	counter = 0;
+	bsp_count = 0;
+	reset = True;
+}
+

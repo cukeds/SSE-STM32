@@ -1,10 +1,10 @@
-06:41:23 **** Build of configuration Debug for project SSE-BluePill ****
+01:32:53 **** Incremental Build of configuration Debug for project SSE-BluePill ****
 make -j8 all 
 arm-none-eabi-size  SSE-BluePill.elf 
    text	   data	    bss	    dec	    hex	filename
-  16088	     20	   1876	  17984	   4640	SSE-BluePill.elf
+  32912	    300	   2668	  35880	   8c28	SSE-BluePill.elf
 Finished building: default.size.stdout
  
 
-06:41:24 Build Finished. 0 errors, 0 warnings. (took 301ms)
+01:32:54 Build Finished. 0 errors, 0 warnings. (took 351ms)
 

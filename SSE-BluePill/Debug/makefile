@@ -11,8 +11,10 @@ RM := rm -rf
 -include sources.mk
 -include ExtSrc/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
+-include Core/app/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Core/Lib/ili9341/subdir.mk
 -include Core/ECUAL/I2C_LCD/subdir.mk
 -include objects.mk
 

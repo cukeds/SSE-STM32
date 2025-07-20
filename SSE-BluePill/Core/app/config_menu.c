@@ -1,0 +1,16 @@
+#include "config_menu.h"
+
+
+void CONFIG_MENU_CONFIGURAR(){
+	*GET_APP_STATE() = Config2;
+	APP_SETFLAG(SHOW_CONFIG2_MENU, True);
+
+}
+void CONFIG_MENU_ANADIR(){
+	*GET_APP_STATE() = AddUser;
+	APP_SETFLAG(SHOW_ADD_USER_MENU, True);
+}
+void CONFIG_MENU_BORRAR(){
+	*GET_APP_STATE() = EraseUser;
+	APP_SETFLAG(SHOW_ERASE_USER_MENU, True);
+}

@@ -5,9 +5,10 @@
 #include "tim.h"
 
 void BSP_ENCODER_Init();
-int16_t BSP_ENCODER_GetCount();
+uint16_t BSP_ENCODER_GetCount();
 int16_t BSP_ENCODER_GetSpeed();
 int16_t BSP_ENCODER_GetDirection();
 int16_t BSP_ENCODER_GetSwitch();
 void BSP_ENCODER_WriteSpeed(int16_t);
+void BSP_ENCODER_ResetEncoder();
 #endif

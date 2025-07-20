@@ -15,5 +15,5 @@ voltage
 toHandleInterruptsRF
 toHandleInterrupts
 app_data
-distance
-duty_cycle
+app_flags
+rx

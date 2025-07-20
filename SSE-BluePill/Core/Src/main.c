@@ -48,13 +48,8 @@
 /* USER CODE BEGIN PV */
 
 uint8_t sNum[5];
-uint8_t motion[5];
-uint8_t config_register;
 uint16_t button=0;
-volatile unsigned long handledInterruptsLCD = 0;
-volatile unsigned long toHandleInterruptsLCD = 0;
-volatile unsigned long handledInterruptsRF = 0;
-volatile unsigned long toHandleInterruptsRF = 0;
+static uint16_t milliseconds=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -65,11 +60,13 @@ void received_message();
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH] = {0,};
-uint8_t tx_data[NRF24L01P_PAYLOAD_LENGTH] = {0, 1, 2, 3, 4, 5, 6, 7};
-bool RetFalse(){
-	return false;
+boolean RetFalse(){
+	return False;
 }
+
+
+extern uint8_t rfidSymbol_idx;
+extern uint8_t motionSymbol_idx;
 /* USER CODE END 0 */
 
 /**
@@ -104,20 +101,22 @@ int main(void)
   MX_TIM2_Init();
   MX_I2C1_Init();
   MX_SPI2_Init();
+  MX_SPI1_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
   BSP_LCD_SetupParams_TypeDef lcd_params;
-  //lcd_params.condition = BSP_HCSR501_Ready;
-  //lcd_params.setup_time = (uint8_t) HCSR501_SETUP_SECONDS + HCSR501_SETUP_MINUTES*60;
-  //lcd_params.seconds = &motion[4];
+//  lcd_params.condition = BSP_HCSR501_Ready;
+//  lcd_params.setup_time = (uint8_t) HCSR501_SETUP_SECONDS + HCSR501_SETUP_MINUTES*60;
+//  lcd_params.seconds = &motion[4];
   lcd_params.condition = RetFalse;
   lcd_params.setup_time = 0;
   lcd_params.seconds = 0;
 
 
   BSP_ENCODER_Init();
-//  BSP_RC522_Init();
+  BSP_RC522_Init();
   BSP_LCD_Init(&lcd_params);
-  BSP_LCD_SendMessage("Hola", 0, 0, true);
 
 
   BSP_RF_Params_TypeDef rf_params = {0};
@@ -125,51 +124,19 @@ int main(void)
   rf_params.rate = NRF24L01P_RATE;
   rf_params.retransmit_count = NRF24L01P_RETRANSMIT_COUNT;
   BSP_RF_Init(&rf_params);
-  BSP_RF_Sending();
+  BSP_RF_Listening();
   HAL_GPIO_WritePin(GPIOC, LED_Pin, GPIO_PIN_SET);
-  uint8_t last_state = 0;
-  uint8_t waiting = 1;
+  NVIC_ClearPendingIRQ(EXTI15_10_IRQn);
 
 
+  app_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-	  button = BSP_ENCODER_GetSwitch();
-	  if(button && waiting){
-		  tx_data[0] = BSP_ENCODER_GetDirection() > 0 ? 1 : 2;
-		  tx_data[1] = (uint8_t) BSP_ENCODER_GetCount() & 0xFF; // 0..7
-		  tx_data[2] = (uint8_t) (BSP_ENCODER_GetCount() >> 8) & 0xFF;// 8..15
-		  tx_data[3] = (uint8_t) (BSP_ENCODER_GetCount() >> 16) & 0xFF;// 16..23
-		  tx_data[4] = (uint8_t) (BSP_ENCODER_GetCount() >> 24) & 0xFF;// 24..31
-		  HAL_GPIO_TogglePin(GPIOC, LED_Pin);
-		  BSP_RF_SendMessage(tx_data);
-		  HAL_GPIO_TogglePin(GPIOC, LED_Pin);
-		  waiting = 1;
-	  }
-
-	  if(handledInterruptsRF != toHandleInterruptsRF){
-		  handledInterruptsRF = toHandleInterruptsRF;
-		  if(rx_data[7] == 1 && last_state != 1){
-			  last_state = 1;
-			  BSP_LCD_SendMessage("No one there", 0, 0, true);
-		  }else if(rx_data[7] == 2 && last_state != 2){
-			  last_state = 2;
-			  BSP_LCD_SendMessage("SOMEONE there", 0, 0, true);
-		  }else if(rx_data[7] == 0 && last_state != 0){
-			  last_state = 0;
-			  BSP_LCD_SendMessage("No connection", 0, 0, true);
-		  }
-		  waiting = 1;
-	  }
-
-
-	  //
-	  //00001010
-//	  HAL_Delay(100); // 100ms
+	  app();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -207,7 +174,7 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
@@ -221,25 +188,137 @@ void SystemClock_Config(void)
 
 void received_message()
 {
-	HAL_GPIO_TogglePin(GPIOC, LED_Pin);
-	toHandleInterruptsRF += BSP_RF_IrqHandler();
-	BSP_RF_ReadData(rx_data);
-	HAL_GPIO_TogglePin(GPIOC, LED_Pin);
-
+	if(!BSP_RF_IrqHandler())
+		return;
+	HAL_GPIO_TogglePin(GPIOD, LED_Pin);
+	APP_SETFLAG(MESSAGE_RECEIVED, true);
+	HAL_GPIO_TogglePin(GPIOD, LED_Pin);
 }
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-//	if(GPIO_Pin == GPIO_PIN_13){
-//		BSP_HCSR501_Init();
-//	}
-//	if(GPIO_Pin == HCSR501_PIN){
-//		toHandleInterruptsLCD++;
-//
-//	}
+	static uint32_t last_interrupt_time = 0;
+
+	if(GPIO_Pin == HCSR501_PIN){
+		if(BSP_HCSR501_Ready()){
+
+			SET_FIELD(GET_APP_DATA(), motion_status, BSP_HCSR501_Read());
+			if(!GET_APP_DATA()->motion_status){
+				APP_SETFLAG(UPDATE_MOTION, True);
+			}
+
+//				HAL_TIM_Base_Start_IT(&htim4);
+//				BSP_HCSR501_OffTime();
+		}
+	}
+
+    if (GPIO_Pin == Encoder_Switch_Pin) {
+        uint32_t current_time = HAL_GetTick();
+
+        // Check if the debounce delay has passed
+        if ((current_time - last_interrupt_time) >= DEBOUNCE_DELAY) {
+            last_interrupt_time = current_time; // Update last interrupt time
+
+            // Check the encoder switch state and update flags
+            if (BSP_ENCODER_GetSwitch() == GPIO_PIN_SET) {
+                APP_SETFLAG(BUTTON_PRESSED, True);
+            } else {
+                APP_SETFLAG(BUTTON_PRESSED, False);
+            }
+        }
+    }
+
+
 	if(GPIO_Pin == NRF24L01P_IRQ_PIN_NUMBER)
 	{
 		received_message();
 	}
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	if(htim == &htim4){
+		BSP_HCSR501_Init();
+		HAL_TIM_Base_Stop_IT(&htim4);
+		return;
+	}
+
+	milliseconds++;
+	static uint16_t seconds = 0;
+	static uint16_t milliseconds2 = 0;
+	static uint16_t minutes = 0;
+	static boolean triggered = False;
+	static uint16_t button_held_counter = 0;
+	static uint16_t button_held_cooldown_timer = 0;
+	milliseconds2++;
+	seconds += milliseconds2 / 1000;
+	milliseconds2 %= 1000;
+	minutes = seconds / 60;
+	seconds %= 60;
+	if(minutes >= HCSR501_SETUP_MINUTES && seconds >= HCSR501_SETUP_SECONDS && !triggered){
+		BSP_HCSR501_Init();
+		triggered = True;
+	}
+
+	BSP_Countdown();
+	if(BSP_GetCounter() <= 0){
+		APP_SETFLAG(IS_CARD_COOLDOWN, False);
+		if(BSP_GetDisplay() == True){
+			BSP_LCD_SendMessage("Lector", 0, 0, True);
+			BSP_LCD_SendMessage("Disponible", 0, 1, False);
+		}
+		BSP_LCD_UPDATE_STATUS(rfidSymbol_idx, True);
+	}
+	if(BSP_GetCounter() == 5000 && BSP_GetDisplay()){
+		BSP_LCD_SendMessage("Espera...", 0, 0, True);
+	}
+
+	BSP_Blink();
+
+	if(milliseconds % (MOTION_ACTIVITY_RANGE_SECONDS * 1000) == 0){
+
+		SET_FIELD(GET_APP_DATA(), motion_activity, GET_APP_DATA()->motion_status == 1 ? GET_APP_DATA()->motion_activity+1 : 0);
+		if(GET_APP_DATA()->motion_activity == MOTION_ACTIVITY_MINIMUM){
+			APP_SETFLAG(UPDATE_MOTION, True);
+		}
+
+	}
+
+
+    if (GET_APP_FLAGS()->button_pressed) {
+        button_held_counter++; // Increment the counter for button hold duration
+
+        // Check if the button has been held long enough to be considered "held"
+        if (button_held_counter >= CONFIG_MENU_BUTTON_DELAY_MS) {
+            APP_SETFLAG(BUTTON_HELD, True);       // Mark as "held"
+            APP_SETFLAG(BUTTON_PRESSED, False);    // Reset "pressed" flag
+            APP_SETFLAG(BUTTON_ONLY_PRESSED, False); // Reset "only pressed" flag
+            button_held_counter = 0; // Reset counter after confirming hold status
+            button_held_cooldown_timer = BUTTON_HELD_COOLDOWN;
+        }
+        if(BSP_ENCODER_GetSwitch() == GPIO_PIN_RESET){
+        	APP_SETFLAG(BUTTON_PRESSED, False);
+        }
+    } else {
+        // If button was previously pressed and released quickly
+        if (button_held_counter > 0 && button_held_counter < CONFIG_MENU_BUTTON_DELAY_MS) {
+            // It was a short press, not held long enough
+        	APP_SETFLAG(BUTTON_PRESSED, False);
+            APP_SETFLAG(BUTTON_ONLY_PRESSED, True); // Mark as "only pressed"
+            APP_SETFLAG(BUTTON_HELD, False);        // Ensure "held" is reset
+            if(button_held_cooldown_timer != 0){
+            	APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+            }
+        }
+        button_held_counter = 0; // Reset counter since button is now released
+    }
+    if(button_held_cooldown_timer > 0){
+        button_held_cooldown_timer--;
+    }
+
+}
+
+uint16_t GetMS(void){
+	return milliseconds;
 }
 /* USER CODE END 4 */
 

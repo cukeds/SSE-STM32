@@ -1,5 +1,5 @@
 Core/Src/bsp_lcd.o: ../Core/Src/bsp_lcd.c ../Core/Inc/bsp_lcd.h \
- ../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h ../Core/Inc/defines.h \
+ ../Core/Inc/defines.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -26,9 +26,11 @@ Core/Src/bsp_lcd.o: ../Core/Src/bsp_lcd.c ../Core/Inc/bsp_lcd.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/ili9341.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/fonts.h \
+ ../Core/Inc/defines.h
 ../Core/Inc/bsp_lcd.h:
-../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h:
 ../Core/Inc/defines.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -57,3 +59,6 @@ Core/Src/bsp_lcd.o: ../Core/Src/bsp_lcd.c ../Core/Inc/bsp_lcd.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/ili9341.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/fonts.h:
+../Core/Inc/defines.h:

@@ -1,0 +1,760 @@
+#include "app.h"
+#include <stdio.h>
+static APP_DATA_Struct app_data = {
+	    .user = NULL,
+		.selected_user = NULL,
+	    .rx_data = {0,},
+	    .tx_data = {0,},
+		.motion_status = False,
+		.motion_activity = 0,
+		.encoder_position = 0,
+	};
+
+static APP_FLAGS_Struct app_flags = {
+		.waiting_for_user = True,
+		.is_card_cooldown = False,
+	    .message_received = False,
+	    .message_to_send = False,
+		.update_motion = False,
+		.button_pressed = False,
+		.button_only_pressed = False,
+		.button_held = False,
+		.show_config_menu = False,
+		.show_config2_menu = False,
+		.confirm_config3 = False,
+		.show_idle = True,
+		.show_add_user_menu = False,
+		.show_erase_user_menu = False,
+		.confirm_action = False,
+};
+
+
+static APP_USER_Struct app_users[MAX_USER_AMOUNT] = {
+    {.serial_number = 0xD3, .name = "Juan Degiovanni", .work_station = 1,.present = False, .total_time_inactive = 0, .total_time_active =0, .longest_time_inactive = 0},
+    {.serial_number = 0xAA, .name = "Fran Gomez", .work_station = 2,.present = False, .total_time_inactive = 0, .total_time_active =0, .longest_time_inactive = 0}
+};
+static uint8_t user_size = 2;
+
+
+static APP_STATES_Enum state = Idle;
+
+uint8_t rfidSymbol[8] = {
+    0b00000,  // BXXXB
+    0b01010,  // XBBBX
+    0b10001,  // BXXXB
+    0b10101,  // XBBBX
+    0b10101,  // BXXXB
+    0b10001,  // XBBBX
+    0b01010,  // BBXBB
+    0b00000   // BBXBB
+};
+
+uint8_t motionSymbol[8] = {
+    0b00010,  //     *
+    0b00101,  //    * *
+    0b10010,  //     *
+    0b01100,  //   ***
+    0b10100,  //     **
+    0b00110,  //    * *
+    0b01010,  //    *   *
+    0b10001   //  *     *
+};
+
+uint8_t configSymbol[8] = {
+    0b00000,
+    0b10101,
+    0b01110,
+    0b11011,
+    0b11011,
+    0b01110,
+    0b10101,
+    0b00000
+};
+
+uint8_t rfidSymbol_idx;
+uint8_t motionSymbol_idx;
+uint8_t configSymbol_idx;
+
+
+static void (*config_menu_display[CONFIG_MENU_ITEMS])() = {
+		(void (*)())CONFIG_MENU_SHOW_CONFIG,
+		(void (*)())CONFIG_MENU_SHOW_ANADIR,
+		(void (*)())CONFIG_MENU_SHOW_BORRAR
+};
+
+static void (*config1_callbacks[3])() = {
+		(void (*)())CONFIG_MENU_CONFIGURAR,
+		(void (*)())CONFIG_MENU_ANADIR,
+		(void (*)())CONFIG_MENU_BORRAR,
+};
+
+void app_init(){
+	rfidSymbol_idx = BSP_LCD_ADD_STATUS(rfidSymbol, True);
+	motionSymbol_idx = BSP_LCD_ADD_STATUS(motionSymbol, False);
+	configSymbol_idx = BSP_LCD_ADD_STATUS(configSymbol, False);
+
+	BSP_LCD_DISPLAY_STATUS();
+}
+
+void app(){
+
+	APP_HANDLE_INPUT(state);
+
+	if(app_flags.message_to_send){
+		APP_SEND_MESSAGE();
+	}
+	if(app_flags.message_received && state == Idle){
+		APP_MESSAGE_RECEIVED();
+		APP_UPDATE_WORKSTATION(True);
+	}else{
+		APP_MESSAGE_RECEIVED();
+		APP_UPDATE_WORKSTATION(False);
+	}
+
+	switch(state){
+	case Idle:
+	{
+		if(app_flags.show_idle){
+			APP_SETFLAG(SHOW_IDLE, False);
+			BSP_LCD_SendMessage("Bienvenido!", 0, 0, True);
+		}
+
+		if(app_flags.waiting_for_user){
+			BSP_LCD_SendMessage("Usuario!", 0, 0, True);
+			static uint8_t sNum = 1;
+			if(!app_flags.is_card_cooldown){
+				BSP_RC522_GetSerialNumber(&sNum);
+			}else{
+				sNum = 1;
+				return;
+			}
+			if(sNum != 1){
+				if(!APP_GET_USER_BY_SERIAL_NUMBER(sNum, &app_data.user)){
+					return;
+				}
+				TOGGLE_FIELD(app_data.user, present);
+				if(app_data.user->present){
+					BSP_LCD_SendMessage("Hola", 0, 0, True);
+					BSP_LCD_SendMessage(app_data.user->name, 0, 1, False);
+					APP_SEND_COMMAND_TO_WORK_STATION(app_data.user->work_station, TURN_ON_WS_COMMAND);
+				}else{
+					BSP_LCD_SendMessage("Chau", 0, 0, True);
+					BSP_LCD_SendMessage(app_data.user->name, 0, 1, False);
+					APP_SEND_COMMAND_TO_WORK_STATION(app_data.user->work_station, TURN_OFF_WS_COMMAND);
+				}
+				APP_SETFLAG(IS_CARD_COOLDOWN, True);
+				BSP_StartCardCooldown(True);
+				BSP_LCD_UPDATE_STATUS(rfidSymbol_idx, False);
+			}
+		}
+
+		if(app_flags.update_motion){
+			BSP_LCD_UPDATE_STATUS(motionSymbol_idx, app_data.motion_status);
+			APP_SETFLAG(UPDATE_MOTION, False);
+		}
+
+		break;
+	}
+	case Config1:
+	{
+
+
+		static int16_t current_showing = -1;
+		if(app_flags.show_config_menu){
+			current_showing = -1;
+			APP_SETFLAG(SHOW_CONFIG_MENU, False);
+		}
+		if(app_data.encoder_position % CONFIG_MENU_ITEMS != current_showing){
+			current_showing = app_data.encoder_position % CONFIG_MENU_ITEMS;
+			config_menu_display[current_showing]();
+		}
+		break;
+	}
+	case Config2:
+	{
+		static int16_t current_showing = -1;
+		if(app_flags.show_config2_menu){
+			current_showing = -1;
+			APP_SETFLAG(SHOW_CONFIG2_MENU, False);
+		}
+		if(app_data.encoder_position % user_size != current_showing){
+			current_showing = app_data.encoder_position % user_size;
+			CONFIG_MENU_SHOW_USER(&app_users[current_showing]);
+			app_data.selected_user = &app_users[current_showing];
+		}
+		break;
+	}
+	case Config3:
+	{
+		static boolean blink = False;
+		static char top_row[16];
+		static uint8_t new_ws = 1;
+
+		if(blink){
+			sprintf(top_row, "WS: _ P: %s", app_data.selected_user->present == True ? "Si" : "No");
+		}
+		else{
+			sprintf(top_row, "WS: %d P: %s", new_ws, app_data.selected_user->present == True ? "Si" : "No");
+		}
+		if(BSP_GetBlinkingTime() <= 0){
+			blink = blink == True ? False : True;
+			BSP_StartBlinking();
+			BSP_LCD_SendMessage(top_row, 0, 0, False);
+		}
+		new_ws = (app_data.encoder_position % MAX_WS_AMOUNT) + 1;
+
+		if(app_flags.confirm_config3){
+			APP_SETFLAG(CONFIRM_CONFIG3, False);
+			state = Config2;
+			app_data.selected_user->work_station = new_ws;
+			sprintf(top_row, "WS: %d P: %s", new_ws, app_data.selected_user->present == True ? "Si" : "No");
+			BSP_LCD_SendMessage(top_row, 0, 0, False);
+			BSP_ENCODER_ResetEncoder();
+		}
+		break;
+	}
+	case AddUser:
+	{
+
+		static boolean blink = False;
+		static char top_row[16];
+		static char bottom_row[16];
+		static uint8_t new_ws = 1;
+		static char new_name[16];
+		static char letter;
+		static uint8_t new_snum;
+		static uint8_t current_field=0;
+		static APP_USER_Struct user;
+		static uint8_t name_length;
+
+		if(app_flags.show_add_user_menu){
+			current_field = 0;
+			memset(new_name, 0, sizeof(new_name));
+			new_snum = 0;
+			letter = 65;
+			new_ws = 1;
+			name_length = 0;
+			APP_SETFLAG(SHOW_ADD_USER_MENU, False);
+			if(user_size == MAX_USER_AMOUNT){
+				BSP_LCD_SendMessage("Maximo limite", 0, 0, True);
+				BSP_LCD_SendMessage("de usuarios", 0, 1, False);
+				return;
+			}
+		}
+		if(user_size == MAX_USER_AMOUNT) return;
+
+
+		if(blink){
+			switch(current_field){
+			case 0:
+				sprintf(top_row, "WS: _");
+				sprintf(bottom_row, " ");
+				break;
+			case 1:
+				sprintf(top_row, "Largo del");
+				sprintf(bottom_row, " _    nombre");
+				break;
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+			case 12:
+			case 13:
+			case 14:
+			case 15:
+			case 16:
+			case 17:
+				sprintf(top_row, "Nombre: _");
+				sprintf(bottom_row, "%s", new_name);
+				break;
+			case 18:
+				sprintf(top_row, "N Serial: _");
+				sprintf(bottom_row, "%d", new_snum);
+				break;
+			default:
+				sprintf(top_row, "Wrong turn!");
+				sprintf(bottom_row, "--------------");
+				break;
+		}
+		}
+		else{
+			switch(current_field){
+			case 0:
+				sprintf(top_row, "WS: %d", new_ws);
+				sprintf(bottom_row, " ");
+				break;
+			case 1:
+				sprintf(top_row, "Largo del");
+				sprintf(bottom_row, " %d    nombre", name_length);
+				break;
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+			case 12:
+			case 13:
+			case 14:
+			case 15:
+			case 16:
+			case 17:
+				sprintf(top_row, "Nombre: %c", letter);
+				sprintf(bottom_row, "%s", new_name);
+				break;
+			case 18:
+				sprintf(top_row, "N Serial:");
+				sprintf(bottom_row, "%d", new_snum);
+				break;
+			default:
+				sprintf(top_row, "Wrong turn!");
+				sprintf(bottom_row, "--------------");
+				break;
+		}
+		}
+		if(BSP_GetBlinkingTime() <= 0){
+			blink = blink == True ? False : True;
+			BSP_StartBlinking();
+			BSP_LCD_SendMessage(top_row, 0, 0, True);
+			BSP_LCD_SendMessage(bottom_row, 0, 1, False);
+		}
+
+		switch(current_field){
+		case 0:
+			if(app_data.encoder_position < 0){
+				new_ws = ((MAX_WS_AMOUNT-1 + app_data.encoder_position) % MAX_WS_AMOUNT) + 1;
+			}else{
+				new_ws = (app_data.encoder_position % MAX_WS_AMOUNT) + 1;
+			}
+			break;
+		case 1:
+			if(app_data.encoder_position < 0){
+				name_length = ((12 + app_data.encoder_position) % 13) + 4;
+			}
+			else{
+				name_length = (app_data.encoder_position % 13) + 4;
+			}
+			break;
+		case 2:
+			if(app_data.encoder_position < 0){
+				letter = (char)((LETTERS_ALPHABET-1 + app_data.encoder_position) % LETTERS_ALPHABET) + UPPERCASE_OFFSET;
+			}
+			else{
+				letter = (char)(app_data.encoder_position % LETTERS_ALPHABET) + UPPERCASE_OFFSET;
+			}
+			new_name[0] = (char) letter;
+			break;
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+			if(app_data.encoder_position < 0){
+				letter = (char)((LETTERS_ALPHABET + app_data.encoder_position) % LETTERS_ALPHABET) + LOWERCASE_OFFSET;
+			}
+			else{
+				letter = (char)(app_data.encoder_position % LETTERS_ALPHABET) + LOWERCASE_OFFSET;
+			}
+
+			new_name[current_field - 2] = letter;
+
+			break;
+		case 18:
+			if(!app_flags.is_card_cooldown){
+				static uint8_t status = -1;
+				if(status != MI_OK){
+					status = BSP_RC522_GetSerialNumber(&new_snum);
+				}else{
+					APP_SETFLAG(IS_CARD_COOLDOWN, True);
+					BSP_StartCardCooldown(False);
+					BSP_LCD_UPDATE_STATUS(rfidSymbol_idx, False);
+				}
+
+			}
+			break;
+		default:
+			state = ConfirmAdd;
+			strcpy(user.name, new_name);
+			user.serial_number = new_snum;
+			user.work_station = new_ws;
+			app_data.selected_user = &user;
+			APP_SETFLAG(SHOW_ADD_USER_MENU, True);
+			break;
+		}
+
+		if(app_flags.confirm_action){
+			APP_SETFLAG(CONFIRM_ACTION, False);
+			if(current_field == name_length + 1){
+				current_field = 18;
+			}else
+			{
+				current_field++;
+			}
+			BSP_ENCODER_ResetEncoder();
+		}
+
+
+		break;
+	}
+	case ConfirmAdd:
+	{
+		if(app_flags.show_add_user_menu){
+			APP_SETFLAG(SHOW_ADD_USER_MENU, False);
+			BSP_LCD_SendMessage("Confirmar", 0, 0, True);
+			BSP_LCD_SendMessage("Denegar: Hold", 0, 1, False);
+		}
+
+		if(app_flags.confirm_action){
+			app_users[user_size] = *app_data.selected_user;
+			user_size++;
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+		break;
+	}
+	case EraseUser:
+	{
+		static int16_t current_showing = -1;
+		if(app_flags.show_erase_user_menu){
+			current_showing = -1;
+			APP_SETFLAG(SHOW_ERASE_USER_MENU, False);
+		}
+		if(app_data.encoder_position % user_size != current_showing){
+			current_showing = app_data.encoder_position % user_size;
+			CONFIG_MENU_SHOW_USER(&app_users[current_showing]);
+			app_data.selected_user = &app_users[current_showing];
+		}
+		break;
+	}
+	case ConfirmErase:
+	{
+		if(app_flags.show_erase_user_menu){
+			APP_SETFLAG(SHOW_ERASE_USER_MENU, False);
+			BSP_LCD_SendMessage("Confirmar", 0, 0, True);
+			BSP_LCD_SendMessage("Denegar: Hold", 0, 1, False);
+		}
+
+		if (app_flags.confirm_action) {
+		    // Find the index of the user to delete
+		    int index_to_delete = -1;
+		    for (int i = 0; i < user_size; i++) {
+		        if (&app_users[i] == app_data.selected_user) {
+		            index_to_delete = i;
+		            break;
+		        }
+		    }
+
+		    // Proceed only if user is found in the array
+		    if (index_to_delete != -1) {
+		        // Shift elements to the left, overwriting the user to delete
+		        for (int i = index_to_delete; i < user_size - 1; i++) {
+		            app_users[i] = app_users[i + 1];
+		        }
+
+		        // Decrement the size of the array
+		        user_size--;
+		    }
+
+		    // Reset flags and return to Idle state
+		    state = Idle;
+		    APP_SETFLAG(BUTTON_HELD, False);
+		    APP_SETFLAG(SHOW_IDLE, True);
+		    BSP_ENCODER_ResetEncoder();
+		}
+
+		break;
+	}
+	default:
+		return;
+	}
+}
+
+void APP_HANDLE_INPUT(){
+	app_data.encoder_position = BSP_ENCODER_GetCount();
+
+	switch(state){
+	case Idle:
+	{
+		if(app_flags.button_held){
+			state = Config1;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_CONFIG_MENU, True);
+			BSP_LCD_UPDATE_STATUS(configSymbol_idx, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+		break;
+	}
+	case Config1:
+	{
+
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_LCD_UPDATE_STATUS(configSymbol_idx, False);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			config1_callbacks[app_data.encoder_position % CONFIG_MENU_ITEMS]();
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			BSP_ENCODER_ResetEncoder();
+		}
+		break;
+	}
+	case Config2:
+	{
+
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_LCD_UPDATE_STATUS(configSymbol_idx, False);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			state = Config3;
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		break;
+	}
+	case Config3:
+	{
+		if(app_flags.button_held){
+			state = Config2;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_CONFIG2_MENU, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			APP_SETFLAG(CONFIRM_CONFIG3, True);
+		}
+
+		break;
+	}
+	case AddUser:
+	{
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			APP_SETFLAG(CONFIRM_ACTION, True);
+		}
+		break;
+	}
+
+	case ConfirmAdd:
+	{
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			APP_SETFLAG(CONFIRM_ACTION, True);
+		}
+		break;
+	}
+	case EraseUser:
+	{
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			APP_SETFLAG(SHOW_ERASE_USER_MENU, True);
+			state = ConfirmErase;
+		}
+		break;
+	}
+	case ConfirmErase:
+	{
+		if(app_flags.button_held){
+			state = Idle;
+			APP_SETFLAG(BUTTON_HELD, False);
+			APP_SETFLAG(SHOW_IDLE, True);
+			BSP_ENCODER_ResetEncoder();
+		}
+
+		if(app_flags.button_only_pressed){
+			APP_SETFLAG(BUTTON_ONLY_PRESSED, False);
+			APP_SETFLAG(CONFIRM_ACTION, True);
+		}
+		break;
+	}
+	default:
+		break;
+	}
+}
+
+void APP_MESSAGE_RECEIVED(){
+	BSP_RF_ReadData(app_data.rx_data);
+	APP_SETFLAG(MESSAGE_RECEIVED, False);
+}
+
+void APP_SEND_MESSAGE(){
+	BSP_RF_Sending();
+	BSP_RF_SendMessage(app_data.tx_data);
+	APP_SETFLAG(MESSAGE_TO_SEND, False);
+}
+
+void APP_SET_MESSAGE_TO_SEND(uint8_t message[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(app_data.tx_data, message, NRF24L01P_PAYLOAD_LENGTH);
+}
+
+void APP_SEND_COMMAND_TO_WORK_STATION(uint8_t ws, uint8_t command[NRF24L01P_PAYLOAD_LENGTH-1]){
+	uint8_t message[NRF24L01P_PAYLOAD_LENGTH];
+	message[0] = ws;
+	for(int i = 1; i < NRF24L01P_PAYLOAD_LENGTH; i++){
+		message[i] = command[i-1];
+	}
+	APP_SET_MESSAGE_TO_SEND(message);
+	APP_SETFLAG(MESSAGE_TO_SEND, True);
+}
+
+void APP_SETFLAG(APP_FLAGS_Enum flag, boolean value){
+    boolean* targetFlag = NULL;
+
+    switch(flag){
+        case MESSAGE_RECEIVED:   targetFlag = &app_flags.message_received; break;
+        case MESSAGE_TO_SEND:    targetFlag = &app_flags.message_to_send; break;
+        case WAITING_FOR_USER:   targetFlag = &app_flags.waiting_for_user; break;
+        case IS_CARD_COOLDOWN:   targetFlag = &app_flags.is_card_cooldown; break;
+        case UPDATE_MOTION:      targetFlag = &app_flags.update_motion; break;
+        case BUTTON_PRESSED:     targetFlag = &app_flags.button_pressed; break;
+        case SHOW_CONFIG_MENU: 	 targetFlag = &app_flags.show_config_menu; break;
+        case BUTTON_HELD:		 targetFlag = &app_flags.button_held; break;
+        case BUTTON_ONLY_PRESSED:targetFlag = &app_flags.button_only_pressed; break;
+        case SHOW_IDLE:		 	 targetFlag = &app_flags.show_idle; break;
+        case SHOW_CONFIG2_MENU:	 targetFlag = &app_flags.show_config2_menu; break;
+        case SHOW_ADD_USER_MENU: targetFlag = &app_flags.show_add_user_menu; break;
+        case SHOW_ERASE_USER_MENU: targetFlag = &app_flags.show_erase_user_menu; break;
+        case CONFIRM_ACTION:	 targetFlag = &app_flags.confirm_action; break;
+        case CONFIRM_CONFIG3:	 targetFlag = &app_flags.confirm_config3; break;
+
+        default: return; // Return early if flag is invalid
+    }
+
+    if (targetFlag) {
+        *targetFlag = value;
+    }
+}
+
+
+boolean APP_GET_USER_BY_SERIAL_NUMBER(uint8_t sNum, APP_USER_Struct **user){
+	for(int i = 0; i < MAX_USER_AMOUNT; i++){
+		if(app_users[i].serial_number == sNum){
+			*user = &app_users[i];
+			return True;
+		}
+	}
+	return False;
+}
+
+boolean APP_GET_USER_BY_WORKSTATION(uint8_t ws, APP_USER_Struct **user){
+	for(int i = 0; i < MAX_USER_AMOUNT; i++){
+		if(app_users[i].work_station == ws){
+			*user = &app_users[i];
+			return True;
+		}
+	}
+	return False;
+}
+
+void APP_UPDATE_WORKSTATION(boolean Display){
+	uint8_t ws = app_data.rx_data[0];
+	if(!APP_GET_USER_BY_WORKSTATION(ws, &app_data.user)){
+		return;
+	}
+	static uint16_t current_time_inactive = 0;
+	current_time_inactive = app_data.rx_data[1] << 8 | app_data.rx_data[2];
+	app_data.user->total_time_inactive += current_time_inactive;
+
+	if(Display){
+		static char puesto[16];  // Adjust size based on your expected message length
+		static char inactividad[16];
+		sprintf(puesto, "Puesto %d", ws);
+		sprintf(inactividad, "Inactividad:%d m", (uint8_t)current_time_inactive);
+		BSP_LCD_SendMessage(puesto, 0, 0, True);
+		BSP_LCD_SendMessage(inactividad, 0, 1, False);
+	}
+
+	if((current_time_inactive) >= INACTIVITY_MAX_MINUTES){
+		APP_SEND_COMMAND_TO_WORK_STATION(app_data.user->work_station, TURN_OFF_WS_COMMAND);
+		SET_FIELD(app_data.user, present, False);
+		app_data.rx_data[0] = 0;
+	}
+}
+
+
+inline APP_DATA_Struct* GET_APP_DATA(){
+	return &app_data;
+}
+
+inline APP_FLAGS_Struct* GET_APP_FLAGS(){
+	return &app_flags;
+}
+
+inline APP_STATES_Enum* GET_APP_STATE(){
+	return &state;
+}
+
+void CONFIG_MENU_SHOW_CONFIG(){
+	BSP_LCD_SendMessage("<--Configurar-->", 0, 1, True);
+}
+
+void CONFIG_MENU_SHOW_ANADIR(){
+	BSP_LCD_SendMessage("<--  Anadir  -->", 0, 1, True);
+}
+
+void CONFIG_MENU_SHOW_BORRAR(){
+	BSP_LCD_SendMessage("<--  Borrar  -->", 0, 1, True);
+}
+
+
+void CONFIG_MENU_SHOW_USER(APP_USER_Struct* user){
+	static char print_message_row1[16], print_message_row2[16];
+	sprintf(print_message_row1, "WS: %d P: %s", user->work_station, user->present == True ? "Si" : "No");
+	sprintf(print_message_row2, "%s", user->name);
+	BSP_LCD_SendMessage(print_message_row1, 0, 0, True);
+	BSP_LCD_SendMessage(print_message_row2, 0, 1, False);
+}

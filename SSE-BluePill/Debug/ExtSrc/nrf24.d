@@ -1,7 +1,7 @@
 ExtSrc/nrf24.o: \
  C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24.c \
- ../../Common/Inc/nrf24.h ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h \
- ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../../Common/Inc/nrf24.h ../Core/Inc/spi.h ../Core/Inc/main.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -29,11 +29,18 @@ ExtSrc/nrf24.o: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/bsp_encoder.h ../Core/Inc/defines.h ../Core/Inc/tim.h \
  ../Core/Inc/bsp_rc522.h ../Core/Inc/rc522.h ../Core/Inc/bsp_hcsr501.h \
- ../Core/Inc/bsp_lcd.h ../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h ../../Common/Inc/bsp_rf.h \
- ../../Common/Inc/nrf24.h ../../Common/Inc/Util.h ../Core/Inc/defines.h
+ ../Core/Inc/bsp_lcd.h ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/ili9341.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/fonts.h \
+ ../Core/Inc/defines.h ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h \
+ ../../Common/Inc/Util.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/app.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/app_defines.h \
+ ../Core/Inc/bsp_hcsr501.h ../Core/Inc/bsp_rc522.h ../Core/Inc/bsp_lcd.h \
+ ../Core/Inc/bsp_encoder.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/config_menu.h
 ../../Common/Inc/nrf24.h:
-../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -69,9 +76,18 @@ ExtSrc/nrf24.o: \
 ../Core/Inc/rc522.h:
 ../Core/Inc/bsp_hcsr501.h:
 ../Core/Inc/bsp_lcd.h:
-../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h:
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/ili9341.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/Lib/ili9341/fonts.h:
+../Core/Inc/defines.h:
 ../../Common/Inc/bsp_rf.h:
 ../../Common/Inc/nrf24.h:
 ../../Common/Inc/Util.h:
-../Core/Inc/defines.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/app.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/app_defines.h:
+../Core/Inc/bsp_hcsr501.h:
+../Core/Inc/bsp_rc522.h:
+../Core/Inc/bsp_lcd.h:
+../Core/Inc/bsp_encoder.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-BluePill/Core/app/config_menu.h:

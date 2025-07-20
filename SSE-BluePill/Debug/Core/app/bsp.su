@@ -1,0 +1,7 @@
+../Core/app/bsp.c:8:6:BSP_StartCardCooldown	16	static
+../Core/app/bsp.c:13:16:BSP_GetDisplay	4	static
+../Core/app/bsp.c:17:13:BSP_Countdown	4	static
+../Core/app/bsp.c:21:17:BSP_GetCounter	4	static
+../Core/app/bsp.c:26:6:BSP_StartBlinking	4	static
+../Core/app/bsp.c:30:13:BSP_Blink	4	static
+../Core/app/bsp.c:34:16:BSP_GetBlinkingTime	4	static

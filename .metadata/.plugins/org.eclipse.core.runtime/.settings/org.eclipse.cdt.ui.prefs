@@ -2,6 +2,7 @@ MemberFilterActionGroup.COutlineViewer.2=true
 eclipse.preferences.version=1
 markOccurrences=false
 scalability.reconciler=false
+sourceHoverBackgroundColor=47,47,47
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

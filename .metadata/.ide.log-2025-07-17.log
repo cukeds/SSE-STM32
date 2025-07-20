@@ -1,0 +1,60 @@
+2025-07-17 23:13:43,039 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-07-17 23:13:44,789 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 2499mS.
+2025-07-17 23:13:44,790 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2025-07-17 23:13:44,794 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2025-07-17 23:14:19,438 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-17 23:14:19,509 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-17 23:14:22,776 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 723856720 Bytes (1073741824)
+2025-07-17 23:14:24,556 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 744050384 Bytes (1073741824)
+2025-07-17 23:14:25,011 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 771345288 Bytes (1073741824)
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-07-17 23:14:25,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: I2C
+2025-07-17 23:14:25,190 [INFO] CodeGenerator:807 - code generatio: config db path: C:/Users/Juan/.stm32cubemx/databases/DB.6.0.120/db/
+2025-07-17 23:14:25,191 [WARN] IP:2191 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-07-17 23:14:25,191 [WARN] IP:2191 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-07-17 23:14:25,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp_save
+2025-07-17 23:14:25,300 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\license.tmp
+2025-07-17 23:14:25,328 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\gpio.c_save
+2025-07-17 23:14:25,387 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\gpio.c
+2025-07-17 23:14:25,391 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\gpio.h_save
+2025-07-17 23:14:25,443 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\gpio.h
+2025-07-17 23:14:25,608 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\i2c.c_save
+2025-07-17 23:14:25,679 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\i2c.c
+2025-07-17 23:14:25,684 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\i2c.h_save
+2025-07-17 23:14:25,734 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\i2c.h
+2025-07-17 23:14:25,742 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\spi.c_save
+2025-07-17 23:14:25,813 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\spi.c
+2025-07-17 23:14:25,818 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\spi.h_save
+2025-07-17 23:14:25,865 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\spi.h
+2025-07-17 23:14:25,874 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\tim.c_save
+2025-07-17 23:14:25,947 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\tim.c
+2025-07-17 23:14:25,951 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\tim.h_save
+2025-07-17 23:14:25,998 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\tim.h
+2025-07-17 23:14:26,009 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c_save
+2025-07-17 23:14:26,077 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_it.c
+2025-07-17 23:14:26,082 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h_save
+2025-07-17 23:14:26,131 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_it.h
+2025-07-17 23:14:26,142 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-17 23:14:26,212 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\stm32f1xx_hal_msp.c
+2025-07-17 23:14:26,215 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp_save
+2025-07-17 23:14:26,258 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\MXTmpFiles\system.tmp
+2025-07-17 23:14:26,266 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-17 23:14:26,317 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-17 23:14:26,335 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h_save
+2025-07-17 23:14:26,388 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Inc\main.h
+2025-07-17 23:14:26,392 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c_save
+2025-07-17 23:14:26,460 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\Core\Src\main.c
+2025-07-17 23:14:26,710 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 107mS.
+2025-07-17 23:14:26,713 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2025-07-17 23:14:26,777 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2025-07-17 23:14:27,426 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 714mS.
+2025-07-17 23:14:27,426 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2025-07-17 23:14:27,434 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.

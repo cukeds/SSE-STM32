@@ -39,8 +39,10 @@ CPP_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Core/ECUAL/I2C_LCD \
+Core/Lib/ili9341 \
 Core/Src \
 Core/Startup \
+Core/app \
 Drivers/STM32F1xx_HAL_Driver/Src \
 ExtSrc \
 

@@ -86,8 +86,8 @@ all: main-build
 main-build: SSE-Disc.elf secondary-outputs
 
 # Tool invocations
-SSE-Disc.elf SSE-Disc.map: $(OBJS) $(USER_OBJS) C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+SSE-Disc.elf SSE-Disc.map: $(OBJS) $(USER_OBJS) C:\Users\Isaac\Documents\Downloads\workspace_1.16.0\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "SSE-Disc.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Isaac\Documents\Downloads\workspace_1.16.0\workspace_1.16.0\SSE-Disc\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-Disc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

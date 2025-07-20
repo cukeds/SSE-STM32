@@ -1,0 +1,7 @@
+../Core/app/bsp.c:8:6:BSP_StartCardCooldown	1
+../Core/app/bsp.c:13:16:BSP_GetDisplay	1
+../Core/app/bsp.c:17:13:BSP_Countdown	1
+../Core/app/bsp.c:21:17:BSP_GetCounter	1
+../Core/app/bsp.c:26:6:BSP_StartBlinking	1
+../Core/app/bsp.c:30:13:BSP_Blink	1
+../Core/app/bsp.c:34:16:BSP_GetBlinkingTime	1
