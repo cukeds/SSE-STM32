@@ -56,3 +56,5 @@ SSE-Disc/*.bak
 
 Rotary/
 test.py
+
+.metadata/

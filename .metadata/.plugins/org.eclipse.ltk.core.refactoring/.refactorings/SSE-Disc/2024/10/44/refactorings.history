@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move &apos;DWT_Delay.c, DWT_Delay.h, Timer_Delay.c, Timer_Delay.h&apos; to &apos;util&apos;" description="Move 4 resources to &apos;util&apos;" destination="Core/util" element1="Core/util/util/DWT_Delay.c" element2="Core/util/util/DWT_Delay.h" element3="Core/util/util/Timer_Delay.c" element4="Core/util/util/Timer_Delay.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1730013473622" updateReferences="true"/>
-</session>
