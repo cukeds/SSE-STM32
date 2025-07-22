@@ -1,2 +1,0 @@
-../Core/Src/bsp_relay.c:3:6:BSP_RELAY_ON	8	static
-../Core/Src/bsp_relay.c:7:6:BSP_RELAY_OFF	8	static

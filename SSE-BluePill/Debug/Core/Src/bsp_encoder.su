@@ -1,8 +1,0 @@
-../Core/Src/bsp_encoder.c:12:6:HAL_TIM_IC_CaptureCallback	16	static
-../Core/Src/bsp_encoder.c:30:6:BSP_ENCODER_Init	8	static
-../Core/Src/bsp_encoder.c:34:17:BSP_ENCODER_GetCount	4	static
-../Core/Src/bsp_encoder.c:37:16:BSP_ENCODER_GetSpeed	8	static
-../Core/Src/bsp_encoder.c:45:16:BSP_ENCODER_GetDirection	4	static
-../Core/Src/bsp_encoder.c:48:16:BSP_ENCODER_GetSwitch	8	static
-../Core/Src/bsp_encoder.c:51:6:BSP_ENCODER_WriteSpeed	16	static
-../Core/Src/bsp_encoder.c:55:6:BSP_ENCODER_ResetEncoder	4	static

@@ -1,7 +1,0 @@
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:5:6:BSP_RF_Init	1
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:13:6:BSP_RF_Sending	3
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:23:6:BSP_RF_SendMessage	2
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:29:6:BSP_RF_Listening	3
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:41:6:_BSP_RF_ReceiveMessage	1
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:46:9:BSP_RF_IrqHandler	4
-C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src/bsp_rf.c:64:6:BSP_RF_ReadData	1

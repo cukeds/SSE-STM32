@@ -1,5 +1,0 @@
-../Core/Src/bsp_hcsr04.c:7:9:HAL_HCSR04_GetDistance	4	static
-../Core/Src/bsp_hcsr04.c:11:6:HAL_HCSR04_Callback	16	static
-../Core/Src/bsp_hcsr04.c:49:6:HAL_HCSR04_Trigger	16	static
-../Core/Src/bsp_hcsr04.c:60:23:BSP_HCSR04_GetPresence	16	static
-../Core/Src/bsp_hcsr04.c:70:6:HAL_TIM_IC_CaptureCallback	16	static

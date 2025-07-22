@@ -1,8 +1,0 @@
-../Core/Src/bsp_lcd.c:8:6:Initializing	24	static
-../Core/Src/bsp_lcd.c:15:6:BSP_LCD_Init	16	static
-../Core/Src/bsp_lcd.c:20:6:BSP_LCD_Clear	24	static
-../Core/Src/bsp_lcd.c:27:6:BSP_LCD_SendMessage	32	static
-../Core/Src/bsp_lcd.c:31:6:BSP_LCD_SendMessageWithParams	56	static
-../Core/Src/bsp_lcd.c:42:5:BSP_LCD_ADD_STATUS	16	static
-../Core/Src/bsp_lcd.c:47:6:BSP_LCD_UPDATE_STATUS	16	static
-../Core/Src/bsp_lcd.c:52:6:BSP_LCD_DISPLAY_STATUS	32	static
