@@ -58,3 +58,21 @@ Rotary/
 test.py
 
 .metadata/
+
+# STM32 auto-generated folders (like Drivers/, Middlewares/)
+SSE-BluePill/Drivers/
+SSE-BluePill/Middlewares/
+
+SSE-Disc/Drivers/
+SSE-Disc/Middlewares/
+
+# CMake build directories
+**/cmake-build-*/
+**/build/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
